@@ -72,8 +72,9 @@ p {
 .cardscontainer {
 	display: flex;
 	width: 70vw;
+	margin: 0 auto 0 auto;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 }
 .cards {
 	margin: 15px;
@@ -85,7 +86,7 @@ p {
 	border-radius: 5px;
 	border-style: solid;
 	border-color: rgb(0, 0, 0);
-	justify-content: space-around;
+	justify-content: space-between;
 	box-shadow: 2px 2px 20px #020520;
 }
 .cards:hover {
