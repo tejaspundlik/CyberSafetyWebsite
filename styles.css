@@ -2,7 +2,11 @@ body {
 	background-color: black;
 }
 .navbar {
-	background: linear-gradient(to right, #6474d3, #cf23cf);
+	background: linear-gradient(
+		to bottom,
+		rgba(91, 139, 234, 0.8) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
 }
 .page_container {
 	width: 100vw;
