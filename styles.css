@@ -1,8 +1,8 @@
-* {
-	background-color: black;
-}
 body {
 	background-color: black;
+}
+.navbar {
+	background: linear-gradient(to right, #6474d3, #cf23cf);
 }
 .page_container {
 	width: 100vw;
@@ -29,7 +29,7 @@ body {
 }
 .gradient_text {
 	font-size: max(4vw, 35px);
-	background: linear-gradient(to right, #6474d3, #cf23cf, #6474d3);
+	background: linear-gradient(to right, #cf23cf, #ca1313, #cf23cf);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
