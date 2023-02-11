@@ -2,11 +2,7 @@ body {
 	background-color: black;
 }
 .navbar {
-	background: linear-gradient(
-		to bottom,
-		rgba(91, 139, 234, 0.8) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
+	background: linear-gradient(to left, #fff9b0, #ffb100);
 }
 .page_container {
 	width: 100vw;
@@ -133,12 +129,13 @@ label {
 	color: white;
 	background-color: transparent;
 }
-.navicon {
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
-}
 .navlink {
-	margin-right: 0;
+	padding: 0;
+	margin: 0;
+}
+p.navicon {
+	padding: 0;
+	margin: 0;
 }
 /*	The css for contact us lies here	*/
 .feedback {
