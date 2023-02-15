@@ -1,46 +1,6 @@
-.page_container {
-	width: 100vw;
-	height: 100vmax;
-	display: flex;
-	flex-flow: row wrap;
-	column-gap: 10vw;
+.division1 {
 	background-image: linear-gradient(to bottom right, #239295, #002233);
-}
-.head_container {
-	display: flex;
-	margin-top: 9vh;
-	flex-direction: column;
-	min-width: 500px;
-	min-height: 280px;
-	height: 35vw;
-	width: 50vw;
-	justify-content: center;
-	align-items: center;
-	background-image: url("./Assets/blob.gif");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 112%;
-	overflow: hidden;
-}
-.gradient_text {
-	font-size: max(4vw, 35px);
-	background: linear-gradient(to right, #cf23cf, #ca1313, #cf23cf);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-h1 {
-	display: flex;
-	background: none;
-}
-.cont2 {
-	display: flex;
-	padding-top: 20vh;
-	height: 60vh;
-	width: 33vw;
-	flex-direction: column;
-	min-width: 300px;
-	min-height: 450px;
+	padding-top: 10%;
 }
 .button {
 	color: white;
@@ -54,15 +14,6 @@ h1 {
 	width: 130px;
 	height: 35px;
 	margin-bottom: 4px;
-}
-.cont3 {
-	width: 100vw;
-	height: auto;
-	margin-left: 5vw;
-	margin-right: 5vw;
-}
-p {
-	font-size: large;
 }
 .cardscontainer {
 	display: flex;
