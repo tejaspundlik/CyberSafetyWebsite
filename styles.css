@@ -133,7 +133,21 @@ label {
 	padding: 0;
 	margin: 0;
 }
-p.navicon {
+.navicon {
+	padding: 0;
+	margin: 0;
+	max-width: 52rem;
+	border-radius: 50px;
+	align-items: center;
+	background-color: rgb(144, 144, 221);
+}
+.navicon:hover {
+	transition: 0.5s;
+	background-color: #ef7e1e;
+}
+
+.navicon p {
+	display: inline-block;
 	padding: 0;
 	margin: 0;
 }
