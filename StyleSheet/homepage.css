@@ -4,6 +4,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	column-gap: 10vw;
+	background-image: linear-gradient(to bottom right, #239295, #002233);
 }
 .head_container {
 	display: flex;
@@ -116,10 +117,4 @@ p {
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 10px;
-}
-p,
-h3,
-label {
-	color: white;
-	background-color: transparent;
 }

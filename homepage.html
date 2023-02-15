@@ -16,11 +16,23 @@
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
-		<link rel="stylesheet" href="./StyleSheet/homepage.css" />
 		<link rel="stylesheet" href="./StyleSheet/navbar.css" />
+		<link rel="stylesheet" href="./StyleSheet/homepage.css" />
+		<link rel="stylesheet" href="./StyleSheet/waves.css" />
 		<title>Are you Cyber Safe?</title>
 	</head>
-
+	<style>
+		.spacer {
+			aspect-ratio: 960/300;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+		.layer1 {
+			background-image: url(./Assets/waves.svg);
+		}
+	</style>
 	<body>
 		<nav class="navbar navbar-expand-xl fixed-top">
 			<div class="container-fluid">
@@ -42,7 +54,6 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
 				<div
 					class="collapse navbar-collapse"
 					id="navbarSupportedContent"
@@ -88,35 +99,28 @@
 		<div class="page_container">
 			<div class="head_container">
 				<h1 class="gradient_text">Cyber Safety</h1>
-				<h1 style="font-size: max(3vw, 25px); color: azure">Awareness</h1>
+				<h1>Awareness</h1>
 			</div>
 			<div class="cont2">
 				<div class="quizbutton">
-					<h2 style="color: azure; font-size: 2.5vw; font-style: oblique">
-						Are you cyber safe ?
-					</h2>
+					<h2>Are you cyber safe ?</h2>
 					<a href="./quiz.html"><button class="button but1">Quiz</button></a>
 				</div>
-				<p id="bruh" style="color: rgb(116, 116, 116)">
-					Take this quiz to find out
-				</p>
+				<p id="bruh">Take this quiz to find out</p>
 				<br />
 				<br />
-				<h3 style="color: azure; font-size: 2.5vw">What is cyber safety ?</h3>
-				<p style="color: #a7a7a7">
+				<h3>What is cyber safety ?</h3>
+				<p>
 					Cyber Safety is to be safe on the internet and is the act of
 					maximizing a user's awareness of personal safety and security risks to
 					private information and property associated with using the internet,
 					and the self-protection from computer crime
 				</p>
 			</div>
-			<br />
-			<br />
-			<br />
-			<br />
+			<div class="spacer layer1"></div>
 			<div class="cont3">
-				<h3 style="color: azure; font-size: 2.5vw">What are Cyber Threats ?</h3>
-				<p style="color: #a7a7a7">
+				<h3>What are Cyber Threats ?</h3>
+				<p>
 					A cyber or cybersecurity threat is a malicious act that seeks to
 					damage data, steal data, or disrupt digital life in general. Cyber
 					threats include computer viruses, data breaches, Denial of Service
@@ -128,8 +132,8 @@
 					organization by trusted users or from remote locations by unknown
 					parties.
 				</p>
-				<h3 style="color: azure; font-size: 2.5vw">Uhh ... in English ?</h3>
-				<p style="color: #a7a7a7">
+				<h3>Uhh ... in English ?</h3>
+				<p>
 					Lets illustrate this with a few examples. An attacker can phish you
 					into giving them your login information. With your login information,
 					they may harm your account or use your data. UPI scams, viruses like
@@ -137,10 +141,8 @@
 					threat. A popular example is in the 2020 pandemic, a lot of webcams
 					were hacked.
 				</p>
-				<h3 style="color: azure; font-size: 2.5vw">
-					So, How can I be safe in the digital age ?
-				</h3>
-				<p style="color: #a7a7a7">Don't worry, we've got you covered.</p>
+				<h3>So, How can I be safe in the digital age ?</h3>
+				<p>Don't worry, we've got you covered.</p>
 				<div class="cardscontainer">
 					<div class="cards"></div>
 					<div class="cards"></div>
