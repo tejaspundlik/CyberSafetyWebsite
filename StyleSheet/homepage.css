@@ -48,8 +48,8 @@ p {
 	display: flex;
 	flex-direction: column;
 	background-color: #eb5967;
-	width: 25rem;
-	height: 35rem;
+	min-width: 25rem;
+	min-height: 35rem;
 	border-radius: 50px;
 	justify-content: space-between;
 	box-shadow: 2px 2px 20px #020520;
