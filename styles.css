@@ -2,7 +2,7 @@ body {
 	background-color: black;
 }
 .navbar {
-	background: linear-gradient(to left, #fff9b0, #ffb100);
+	background: linear-gradient(to bottom right, #0096ff, #00d7ff);
 }
 .page_container {
 	width: 100vw;
@@ -197,3 +197,5 @@ form {
 	background: linear-gradient(to bottom right, #0018a8, #ccccff);
 	border-radius: 5%;
 }
+
+/* The css for quiz lies here */
