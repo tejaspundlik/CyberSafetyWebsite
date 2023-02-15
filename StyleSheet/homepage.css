@@ -8,74 +8,61 @@ p {
 	color: rgb(233, 233, 194);
 	font-size: large;
 	padding: 0 10% 0 10%;
+	margin: 2% 0 2% 0;
 }
 .division1 {
 	background-color: #120e2b;
 	padding-top: 10%;
-	margin-bottom: 0;
 }
 .division2 {
 	background-color: #c62368;
+	padding-bottom: 3%;
 }
 .button {
 	color: white;
 	text-align: center;
 	font-size: 20px;
 	cursor: pointer;
-}
-.but1 {
 	background-color: #c62368;
 	border-radius: 20px;
-	width: 130px;
-	height: 35px;
 	margin-bottom: 4px;
 }
-.cardscontainer {
-	display: flex;
-	width: 70vw;
-	margin: 0 auto 0 auto;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.cards {
-	margin: 15px;
-	display: flex;
-	flex-direction: column;
-	background-color: #eb5967;
-	width: 25vmax;
-	height: 30vmax;
-	border-radius: 5px;
-	border-style: solid;
-	border-color: rgb(0, 0, 0);
-	justify-content: space-between;
-	box-shadow: 2px 2px 20px #020520;
-}
-.cards:hover {
-	animation-name: hover-animation1;
+.button:hover {
+	animation-name: button-hover;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
-.but1:hover {
-	animation-name: hover-animation2;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}
-@keyframes hover-animation2 {
+@keyframes button-hover {
 	100% {
 		border-color: #fa7268;
 		background-color: #fa7268;
 	}
 }
-@keyframes hover-animation1 {
+.cardscontainer {
+	display: flex;
+	max-width: 80rem;
+	margin: 0 auto 0 auto;
+}
+.cards {
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #eb5967;
+	width: 25rem;
+	height: 35rem;
+	border-radius: 50px;
+	justify-content: space-between;
+	box-shadow: 2px 2px 20px #020520;
+}
+.cards:hover {
+	animation-name: cards-hover;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes cards-hover {
 	100% {
 		background-color: #fa7268;
 		transform: scale(1.03);
 	}
-}
-.quizbutton {
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	gap: 10px;
 }
