@@ -1,6 +1,21 @@
+h1,
+h2,
+h3 {
+	color: white;
+	padding: 0 10% 0 10%;
+}
+p {
+	color: rgb(233, 233, 194);
+	font-size: large;
+	padding: 0 10% 0 10%;
+}
 .division1 {
-	background-image: linear-gradient(to bottom right, #239295, #002233);
+	background-color: #120e2b;
 	padding-top: 10%;
+	margin-bottom: 0;
+}
+.division2 {
+	background-color: #c62368;
 }
 .button {
 	color: white;
@@ -9,7 +24,7 @@
 	cursor: pointer;
 }
 .but1 {
-	background-color: #293db2;
+	background-color: #c62368;
 	border-radius: 20px;
 	width: 130px;
 	height: 35px;
@@ -26,7 +41,7 @@
 	margin: 15px;
 	display: flex;
 	flex-direction: column;
-	background-color: #4b5dc2;
+	background-color: #eb5967;
 	width: 25vmax;
 	height: 30vmax;
 	border-radius: 5px;
@@ -47,18 +62,13 @@
 }
 @keyframes hover-animation2 {
 	100% {
-		border-style: solid;
-		border-color: #0f0054;
-		border-width: 3px;
-		background-color: #c2c3fa;
+		border-color: #fa7268;
+		background-color: #fa7268;
 	}
 }
 @keyframes hover-animation1 {
 	100% {
-		border-style: solid;
-		border-color: #a50fa5;
-		border-width: 3px;
-		background-color: #ffffff;
+		background-color: #fa7268;
 		transform: scale(1.03);
 	}
 }
