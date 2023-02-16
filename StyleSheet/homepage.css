@@ -4,6 +4,27 @@ h3 {
 	color: white;
 	padding: 0 10% 0 10%;
 }
+.cyberheading {
+  font-size:40px;
+  position:absolute;
+  z-index: 2;
+  top:45%;
+  background: linear-gradient(to right, #3E185D, #A200FF);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-weight: 800;
+	padding-left:15%;
+}
+.awareheading{
+	font-size: 30px;
+	position: absolute;
+	z-index: 2;
+	top: 53%;
+	color:white;
+	font-weight: 300;
+	padding-left: 20%;
+
+}
 p {
 	color: rgb(233, 233, 194);
 	font-size: large;
