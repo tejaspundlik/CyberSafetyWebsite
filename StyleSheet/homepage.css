@@ -8,22 +8,22 @@ h3 {
 	font-size: 45px;
 	position: absolute;
 	z-index: 2;
-	top: 21.5rem;
+	top: 23.5rem;
 	background: linear-gradient(to right, #3e185d, #a200ff);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 	font-weight: 800;
-	padding-left: 14.5rem;
+	padding-left: 20.75rem;
 }
 .awareheading {
 	font-size: 35px;
 	position: absolute;
 	z-index: 2;
-	top: 25.5rem;
+	top: 27.5rem;
 	color: white;
 	font-weight: 300;
-	padding-left: 19rem;
+	padding-left: 25rem;
 }
 p {
 	color: rgb(233, 233, 194);
