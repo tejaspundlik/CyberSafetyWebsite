@@ -13,13 +13,27 @@ h3 {
 	margin-right: auto;
 	max-width: 50vw;
 	font-family: sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	color: #1ba2d2;
 	padding: 5px;
 	text-align: center;
 }
+label {
+	font-size: 18px;
+	color: aliceblue;
+}
+form div {
+	padding-top: 2rem;
+}
+form li {
+	padding: 2rem;
+	width: 75%;
+	border-radius: 50px;
+	margin: 2rem auto 2rem auto;
+	background-color: #eb5967;
+}
 body {
-	background: linear-gradient(to bottom right, #0096ff, #00d7ff);
+	background-color: #120e2b;
 }
 form ol {
 	list-style: none;
@@ -39,7 +53,6 @@ form ol {
 
 h1 {
 	font-size: 70px;
-	text-shadow: 2px 2px 5px rgba(13, 53, 126, 0.6);
 	font-family: sans-serif;
 }
 form {
