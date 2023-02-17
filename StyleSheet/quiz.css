@@ -21,7 +21,9 @@ h3 {
 body {
 	background: linear-gradient(to bottom right, #0096ff, #00d7ff);
 }
-
+form ol {
+	list-style: none;
+}
 .form_bg {
 	display: flex;
 	width: 60vw;
