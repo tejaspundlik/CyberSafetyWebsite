@@ -14,7 +14,6 @@
 		<link rel="stylesheet" href="./StyleSheet/contactpage.css" />
 		<link rel="stylesheet" href="./StyleSheet/navbar.css" />
 	</head>
-
 	<body>
 		<nav class="navbar navbar-expand-xl fixed-top">
 			<div class="container-fluid">
@@ -78,29 +77,40 @@
 				</div>
 			</div>
 		</nav>
-		<div class="form">
-			<form class="feedback" align="center">
-				<br />
-				<label for="firstname">First Name</label>
-				<input
-					type="text"
-					id="firstname"
-					name="firstname"
-					placeholder="Jane / John"
-				/>
-				<label for="lastname">Last Name</label>
-				<input type="text" id="lastname" name="lastname" placeholder="Doe" />
-				<label for="email">Email Address</label>
-				<input
-					type="email"
-					id="email"
-					name="email"
-					placeholder="xyz@domain.com"
-				/>
-				<label for="concern">Concern</label>
-				<textarea id="concern" rows="5" name="concern"></textarea>
-				<input type="submit" value="Submit" />
-			</form>
+		<div class="container">
+			<div class="form">
+				<div class="contact-info">
+					<div class="title">Your Feedback Matters</div>
+					<p class="text">
+						Your input is incredibly valuable to us as we strive to continuously
+						improve and enhance our offerings.By listening to your feedback, we
+						can identify areas for improvement and increase customer
+						satisfaction.
+					</p>
+					<img src="./Assets/mail.gif" width="50%" />
+				</div>
+				<div class="contact-form">
+					<form method="post">
+						<h3 class="title">Let's get in touch</h3>
+						<div class="input-container">
+							<input type="text" name="Name" class="input" id="Name" />
+							<label for="Name">Name</label>
+							<span>Name</span>
+						</div>
+						<div class="input-container">
+							<input type="email" name="email" class="input" id="Email" />
+							<label for="Email">Email</label>
+							<span>Email</span>
+						</div>
+						<div class="input-container textarea">
+							<textarea name="message" class="input" id="message"></textarea>
+							<label for="message">Feedback</label>
+							<span>Message</span>
+						</div>
+						<input type="submit" value="Submit" class="btn1" />
+					</form>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
