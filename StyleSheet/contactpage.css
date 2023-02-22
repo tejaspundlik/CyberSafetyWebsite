@@ -1,6 +1,11 @@
 .feedback {
 	max-width: 75%;
 }
+body {
+	background-image: url(../Assets/feedbackBackground.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .contact {
 	display: flex;
 	min-width: 80vh;
