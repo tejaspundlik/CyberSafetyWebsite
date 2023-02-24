@@ -24,7 +24,17 @@ body {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
-
+.form input[type="text"] {
+	background-color: #f97169;
+}
+.form input[type="email"] {
+	background-color: #f97169;
+}
+.textarea {
+	background-color: #f97169;
+	border-radius: 25px;
+	margin-bottom: 0;
+}
 .contact-form {
 	background-color: #cc2c67;
 	position: relative;
