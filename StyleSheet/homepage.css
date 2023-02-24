@@ -5,23 +5,25 @@ h3 {
 	padding: 0 10% 0 10%;
 }
 .cyberheading {
-	font-size: 45px;
-	position: absolute;
-	top: 18rem;
+	display: inline-block;
+	font-size: 300%;
+	position: relative;
+	top: 45%;
+	left: 10%;
 	background: linear-gradient(to right, #3e185d, #a200ff);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 	font-weight: 800;
-	padding-left: 12.75rem;
 }
 .awareheading {
-	font-size: 35px;
-	position: absolute;
-	top: 21.5rem;
+	display: inline-block;
+	font-size: 200%;
+	position: relative;
 	color: white;
 	font-weight: 300;
-	padding-left: 16.75rem;
+	top: 45%;
+	left: 20%;
 }
 p {
 	color: rgb(233, 233, 194);
