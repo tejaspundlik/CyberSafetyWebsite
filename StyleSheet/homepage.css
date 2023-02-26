@@ -1,92 +1,115 @@
 h1,
 h2,
 h3 {
-	color: white;
-	padding: 0 10% 0 10%;
+  color: white;
+  padding: 0 10% 0 10%;
+}
+.headcontainer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.blobtext-container {
+  padding-top: 20px;
+  display: flex;
+  margin-top: 5vh;
+  flex-direction: column;
+  min-width: 500px;
+  min-height: 280px;
+  height: 35vw;
+  width: 45vw;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Assets/blobAnimation.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 38vw;
+  overflow: hidden;
+}
+.graph-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cyberheading {
-	display: inline-block;
-	font-size: 300%;
-	position: relative;
-	top: 45%;
-	left: 10%;
-	background: linear-gradient(to right, #3e185d, #a200ff);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	font-weight: 800;
+  display: flex;
+  font-size: max(3.5vw, 35px);
+  background: linear-gradient(to right, #3e185d, #a200ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 800;
 }
 .awareheading {
-	display: inline-block;
-	font-size: 200%;
-	position: relative;
-	color: white;
-	font-weight: 300;
-	top: 45%;
-	left: 20%;
+  display: flex;
+  font-size: max(3vw, 27px);
+  color: white;
+  font-weight: 300;
 }
 p {
-	color: rgb(233, 233, 194);
-	font-size: large;
-	padding: 0 10% 0 10%;
-	margin: 2% 0 2% 0;
+  color: rgb(233, 233, 194);
+  font-size: large;
+  padding: 0 10% 0 10%;
+  margin: 2% 0 2% 0;
 }
 .division1 {
-	background-color: #120e2b;
-	padding-top: 5%;
+  background-color: #120e2b;
+  padding-top: 5%;
 }
 .division2 {
-	background-color: #c62368;
+  background-color: #c62368;
 }
 .division3 {
-	background-color: #c62368;
-	padding: 5% 0 3% 0;
+  background-color: #c62368;
+  padding: 5% 0 3% 0;
 }
 .button {
-	color: white;
-	text-align: center;
-	font-size: 20px;
-	cursor: pointer;
-	background-color: #3e185d;
-	border-radius: 20px;
-	margin-bottom: 4px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #3e185d;
+  border-radius: 20px;
+  margin-bottom: 4px;
 }
 .button:hover {
-	animation-name: button-hover;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
+  animation-name: button-hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 @keyframes button-hover {
-	100% {
-		border-color: #fa7268;
-		background-color: #a200ff;
-	}
+  100% {
+    border-color: #fa7268;
+    background-color: #a200ff;
+  }
 }
 .cardscontainer {
-	display: flex;
-	max-width: 80rem;
-	margin: 0 auto 0 auto;
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto 0 auto;
 }
 .cards {
-	margin: 1rem;
-	display: flex;
-	flex-direction: column;
-	background-color: #eb5967;
-	min-width: 25rem;
-	min-height: 35rem;
-	border-radius: 50px;
-	justify-content: space-between;
-	box-shadow: 2px 2px 20px #020520;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #eb5967;
+  min-width: 25rem;
+  min-height: 35rem;
+  border-radius: 50px;
+  justify-content: space-between;
+  box-shadow: 2px 2px 20px #020520;
 }
 .cards:hover {
-	animation-name: cards-hover;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+  animation-name: cards-hover;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes cards-hover {
-	100% {
-		background-color: #fa7268;
-		transform: scale(1.03);
-	}
+  100% {
+    background-color: #fa7268;
+    transform: scale(1.03);
+  }
 }
