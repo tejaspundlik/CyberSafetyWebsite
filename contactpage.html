@@ -88,7 +88,7 @@
 					<img src="./Assets/mail.gif" />
 				</div>
 				<div class="contact-form">
-					<form method="post">
+					<form action="mailto:useforjdoe@gmail.com" method="post">
 						<h3 class="title">Let's get in touch</h3>
 						<div class="input-container">
 							<input
@@ -128,21 +128,5 @@
 			</div>
 		</div>
 	</body>
-	<script>
-		let elements = document.querySelectorAll(".input");
-		function focusFunc() {
-			let parent = this.parentNode;
-			parent.classList.add("focus");
-		}
-		function blurFunc() {
-			let parent = this.parentNode;
-			if (this.value == "") {
-				parent.classList.remove("focus");
-			}
-		}
-		elements.forEach((inputs) => {
-			inputs.addEventListener("focus", focusFunc);
-			inputs.addEventListener("blur", blurFunc);
-		});
-	</script>
+	<script src="./Script/contactpage.js"></script>
 </html>
