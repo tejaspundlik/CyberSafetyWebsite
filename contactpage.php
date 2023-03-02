@@ -1,16 +1,5 @@
 <?php
-print_r($_POST);
-if ($_POST['email'] != '') {
-	$userName = $_POST['Name'];
-	$userEmail = $_POST['email'];
-	$userFeedback = $_POST['message'];
-	$to = "useforjdoe@gmail.com";
-	$body = "";
-	$body .= "From: " . $userName . "\r\n";
-	$body .= "Email: " . $userEmail . "\r\n";
-	$body .= "Feedback: " . $userFeedback . "\r\n";
-	mail($to, $userFeedback, $body);
-}
+
 ?>
 <html lang="en">
 
@@ -82,7 +71,7 @@ if ($_POST['email'] != '') {
 				<img src="./Assets/mail.gif" />
 			</div>
 			<div class="contact-form">
-				<form action="contactpage.php" method="POST">
+				<form action="send.php" method="POST">
 					<h3 class="title">Let's get in touch</h3>
 					<div class="input-container">
 						<input type="text" name="Name" class="input" id="Name" autocomplete="off" />
@@ -96,10 +85,10 @@ if ($_POST['email'] != '') {
 					</div>
 					<div class="input-container textarea">
 						<textarea name="message" class="input" id="message" autocomplete="off"></textarea>
-						<label name="Feedback" for="message">Feedback</label>
+						<label name="feedback" for="message">Feedback</label>
 						<span>Message</span>
 					</div>
-					<input type="submit" value="Submit" class="btn1" />
+					<input type="submit" name="submit" value="Submit" class="btn1" />
 				</form>
 			</div>
 		</div>
