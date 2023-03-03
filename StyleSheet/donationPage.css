@@ -1,0 +1,81 @@
+body {
+	background-image: url(../Assets/feedbackBackground.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.message p {
+	color: white;
+	padding: 0 2rem 1rem 2rem;
+}
+.main {
+	margin-top: 5rem;
+	max-width: 75%;
+	margin: 12rem auto 0 auto;
+	display: flex;
+}
+.message {
+	flex: 1;
+	background-color: #f97169;
+	border-radius: 25px;
+}
+.donation {
+	background-color: #cc2c67;
+	flex: 1;
+	border-radius: 25px;
+}
+.image {
+	display: block;
+	border-radius: 20px;
+	margin: 2rem 0 2rem 0;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.donation h1 {
+	color: white;
+	text-align: center;
+	margin: 2rem 0 2rem 0;
+}
+.donation p {
+	color: white;
+	text-align: center;
+	margin: 2rem 0 2rem 0;
+}
+.donation input {
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #3e185d;
+	background-color: #fa7268;
+	border-radius: 20px;
+	padding: 1rem;
+	caret-color: white;
+	color: white;
+	text-align: center;
+}
+.button {
+	display: block;
+	color: white;
+	text-align: center;
+	width: 10rem;
+	cursor: pointer;
+	background-color: #3e185d;
+	border-radius: 20px;
+	padding: 2rem 2rem;
+	margin-top: 1rem;
+}
+.button p {
+	margin: 0 auto;
+	max-width: 5rem;
+}
+.button:hover {
+	animation-name: button-hover;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes button-hover {
+	100% {
+		border-color: #fa7268;
+		background-color: #fa7268;
+	}
+}
