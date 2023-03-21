@@ -58,15 +58,6 @@ const quizData = [
 		correct: "b",
 	},
 	{
-		question:
-			"Why is it important to keep software up-to-date on your computer?",
-		a: "To improve the performance of the software",
-		b: "To fix bugs and improve the functionality of the software",
-		c: "To make the software compatible with new hardware",
-		d: "All of the above",
-		correct: "d",
-	},
-	{
 		question: "What is the best way to secure your home Wi-Fi network?",
 		a: "By leaving the network name and password as the default",
 		b: "By using a weak password that is easy to remember",
@@ -135,7 +126,7 @@ submitBtn.addEventListener("click", () => {
 		} else {
 			quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-           <button onclick="location.reload()">Reload</button>
+           <button class="button" onclick="location.reload()" >Try Again</button>
            `;
 		}
 	}
