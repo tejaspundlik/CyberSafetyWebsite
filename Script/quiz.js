@@ -83,11 +83,16 @@ const quizData = [
 	},
 ];
 
-let subset = [];
-for (i = 0; i < 5; i++) {
-	let idx = Math.floor(Math.random() * 10);
-	subset.push(quizData[idx]);
+const randomShuffle = [...quizData];
+
+for (let i = randomShuffle.length - 1; i > 0; i--) {
+	const j = Math.floor(Math.random() * (i + 1));
+	[randomShuffle[i], randomShuffle[j]] = [randomShuffle[j], randomShuffle[i]];
 }
+
+// Extract the first 5 objects from the shuffled array
+const randomQuestions = randomShuffle.slice(0, 5);
+
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
 const questionEl = document.getElementById("question");
@@ -101,7 +106,7 @@ let score = 0;
 loadQuiz();
 function loadQuiz() {
 	deselectAnswers();
-	const currentQuizData = subset[currentQuiz];
+	const currentQuizData = randomQuestions[currentQuiz];
 	questionEl.innerText = currentQuizData.question;
 	a_text.innerText = currentQuizData.a;
 	b_text.innerText = currentQuizData.b;
@@ -123,15 +128,15 @@ function getSelected() {
 submitBtn.addEventListener("click", () => {
 	const answer = getSelected();
 	if (answer) {
-		if (answer === subset[currentQuiz].correct) {
+		if (answer === randomQuestions[currentQuiz].correct) {
 			score++;
 		}
 		currentQuiz++;
-		if (currentQuiz < subset.length) {
+		if (currentQuiz < randomQuestions.length) {
 			loadQuiz();
 		} else {
 			quiz.innerHTML = `
-           <h2>You answered ${score}/${subset.length} questions correctly</h2>
+           <h2>You answered ${score}/${randomQuestions.length} questions correctly</h2>
            <button class="button" onclick="location.reload()" >Try Again</button>
            `;
 		}
