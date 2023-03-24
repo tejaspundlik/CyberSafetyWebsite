@@ -82,6 +82,12 @@ const quizData = [
 		correct: "c",
 	},
 ];
+
+let subset = [];
+for (i = 0; i < 5; i++) {
+	let idx = Math.floor(Math.random() * 10);
+	subset.push(quizData[idx]);
+}
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
 const questionEl = document.getElementById("question");
@@ -95,7 +101,7 @@ let score = 0;
 loadQuiz();
 function loadQuiz() {
 	deselectAnswers();
-	const currentQuizData = quizData[currentQuiz];
+	const currentQuizData = subset[currentQuiz];
 	questionEl.innerText = currentQuizData.question;
 	a_text.innerText = currentQuizData.a;
 	b_text.innerText = currentQuizData.b;
@@ -117,15 +123,15 @@ function getSelected() {
 submitBtn.addEventListener("click", () => {
 	const answer = getSelected();
 	if (answer) {
-		if (answer === quizData[currentQuiz].correct) {
+		if (answer === subset[currentQuiz].correct) {
 			score++;
 		}
 		currentQuiz++;
-		if (currentQuiz < quizData.length) {
+		if (currentQuiz < subset.length) {
 			loadQuiz();
 		} else {
 			quiz.innerHTML = `
-           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+           <h2>You answered ${score}/${subset.length} questions correctly</h2>
            <button class="button" onclick="location.reload()" >Try Again</button>
            `;
 		}
