@@ -16,7 +16,6 @@ async function loadQuizData() {
 		[randomShuffle[i], randomShuffle[j]] = [randomShuffle[j], randomShuffle[i]];
 	}
 
-	// Extract the first 5 objects from the shuffled array
 	const randomQuestions = randomShuffle.slice(0, 5);
 
 	const quiz = document.getElementById("quiz");
@@ -32,7 +31,6 @@ async function loadQuizData() {
 	loadQuiz();
 	function loadQuiz() {
 		deselectAnswers();
-		console.log(quizData);
 		const currentQuizData = randomQuestions[currentQuiz];
 		questionEl.innerText = currentQuizData.question;
 		a_text.innerText = currentQuizData.a;
@@ -55,7 +53,10 @@ async function loadQuizData() {
 	submitBtn.addEventListener("click", () => {
 		const answer = getSelected();
 		if (answer) {
-			if (answer === randomQuestions[currentQuiz].correct) {
+			if (
+				answer.toUpperCase() ===
+				randomQuestions[currentQuiz].correct.toUpperCase()
+			) {
 				score++;
 			}
 			currentQuiz++;
