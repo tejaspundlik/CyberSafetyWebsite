@@ -1,6 +1,7 @@
 let quizData = [];
 
 async function loadQuizData() {
+	await fetch("./QuizBackend/fetchQuestions.php");
 	const response = await fetch("./QuizBackend/questions.json");
 	const data = await response.json();
 	return data;
