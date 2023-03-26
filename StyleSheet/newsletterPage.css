@@ -11,7 +11,7 @@ body {
 .main {
 	margin-top: 5rem;
 	max-width: 75%;
-	margin: 12rem auto 0 auto;
+	margin: 10rem auto 0 auto;
 	display: flex;
 }
 .message {
@@ -23,6 +23,7 @@ body {
 	background-color: #cc2c67;
 	flex: 1;
 	border-radius: 25px;
+	padding-top: 3%;
 }
 .image {
 	display: block;
@@ -31,11 +32,6 @@ body {
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-}
-.donation h1 {
-	color: white;
-	text-align: center;
-	margin: 2rem 0 2rem 0;
 }
 .donation p {
 	color: white;
@@ -63,6 +59,7 @@ body {
 	border-radius: 20px;
 	padding: 2rem 2rem;
 	margin-top: 1rem;
+	margin-left: 36%;
 }
 .button p {
 	margin: 0 auto;
