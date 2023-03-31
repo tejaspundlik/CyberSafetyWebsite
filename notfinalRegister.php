@@ -18,7 +18,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$stmt = $conn->prepare("INSERT INTO users (email,fname,lname,userpassword) values(?,?,?,?)");
 	$stmt->bind_param("ssss", $mail, $fname, $lname, $formpassword);
 	$stmt->execute();
-	header("Location:./registration.php");
+	//header("Location:./registration.php");
 	$stmt->close();
 	$conn->close();
 }
@@ -92,7 +92,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 			<input type="text" id="lname" name="lname" required placeholder="Last Name" autocomplete="off" /><br />
 			<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
 			<input id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
-			<input type="submit" value="Sign In" />
+			<input type="submit" value="Register" />
 		</form>
 	</div>
 </body>
