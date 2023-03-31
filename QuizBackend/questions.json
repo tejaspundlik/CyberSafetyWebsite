@@ -5,7 +5,7 @@
         "b": "7V@#t&Jn",
         "c": "password12345",
         "d": "tY4m$j^s",
-        "correct": "c"
+        "correct": "C"
     },
     {
         "question": "Which of the following is NOT an example of multi-factor authentication?",
@@ -13,7 +13,7 @@
         "b": "Password and fingerprint scan",
         "c": "Password and facial recognition",
         "d": "Password only",
-        "correct": "d"
+        "correct": "D"
     },
     {
         "question": "What is the best way to keep your passwords safe?",
