@@ -8,8 +8,26 @@ use PHPMailer\PHPMailer\Exception;
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
-
+$mail_send = false;
 if (isset($_POST['email']) && $_POST['email'] != '') {
+	$name = $_POST['Name'];
+	$email = $_POST['email'];
+	$feedback = $_POST['message'];
+	$servername = "sql12.freemysqlhosting.net";
+	$username = "sql12608164";
+	$password = "eDcWvKrJUv";
+	$dbname = "sql12608164";
+	$conn = new mysqli(
+		$servername,
+		$username,
+		$password,
+		$dbname
+	);
+	$stmt = $conn->prepare("INSERT INTO user_feedback (email,name,feedback) VALUES (?,?,?)");
+	$stmt->bind_param("sss", $email, $name, $feedback);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
 	$mail = new PHPMailer(true);
 	$mail->isSMTP();
 	$mail->Host       = 'smtp.gmail.com';
@@ -25,6 +43,17 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$mail->Subject = 'Feedback from ' . $_POST['Name'];
 	$mail->Body    = $_POST['message'];
 	$mail->send();
+	$mail_send = true;
+	echo '<div class="alert alert-success alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+	<strong>Thank you for your feedback!</strong><hr>We have received your feedback and we are working to resolve it as fast as possible.
+	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>';
+}
+if ($mail_send == false and $_SERVER['REQUEST_METHOD'] == 'POST') {
+	echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+	<strong>Oops! Something went wrong</strong><hr>It\'s not you it\'s us and we are working to resolve it as fast as possible.
+	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>';
 }
 ?>
 
@@ -55,17 +84,17 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 				<form action="./contactpage.php" method="POST">
 					<h3 class="title">Let's get in touch</h3>
 					<div class="input-container">
-						<input type="text" name="Name" class="input" id="Name" autocomplete="off" />
+						<input type="text" name="Name" class="input" id="Name" autocomplete="off" required />
 						<label name="name" for="Name">Name</label>
 						<span>Name</span>
 					</div>
 					<div class="input-container">
-						<input type="email" name="email" class="input" id="Email" autocomplete="off" />
+						<input type="email" name="email" class="input" id="Email" autocomplete="off" required />
 						<label name="email" for="Email">Email</label>
 						<span>Email</span>
 					</div>
 					<div class="input-container textarea">
-						<textarea name="message" class="input" id="message" autocomplete="off"></textarea>
+						<textarea name="message" class="input" id="message" autocomplete="off" required></textarea>
 						<label name="feedback" for="message">Feedback</label>
 						<span>Message</span>
 					</div>

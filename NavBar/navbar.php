@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactpage.html">
+                        <a class="nav-link" href="./contactpage.php">
                             <div class="navicon">
                                 <img src="../Assets/location.gif" width="27.5%" />
                                 <p>Contact Us</p>
