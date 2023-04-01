@@ -39,17 +39,26 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	<title>Review Page</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 	<link rel="stylesheet" href="./StyleSheet/navbar.css" />
-	<link rel="stylesheet" href="./notfinalSignIn.css" />
+	<link rel="stylesheet" href="./signRegister.css" />
 </head>
 
 <body>
 	<div class="signin">
-		<h1>Sign In</h1>
-		<form action="" method="post">
-			<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-			<input id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
-			<input type="submit" value="Sign In" />
-		</form>
+		<div class="left">
+			<img src="./Assets/signin.jpg" />
+			<p>Sign-In To Access All The Features Available To You</p>
+		</div>
+		<div class="right">
+			<h1>Sign In</h1>
+			<form action="" method="post">
+				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
+				<input id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
+				<input type="submit" value="Sign In" />
+			</form>
+			<a href="./registerPage.php">
+				<p>Register Here</p>
+			</a>
+		</div>
 	</div>
 </body>
 

@@ -35,19 +35,26 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	<title>Review Page</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 	<link rel="stylesheet" href="./StyleSheet/navbar.css" />
-	<link rel="stylesheet" href="./notfinalSignIn.css" />
+	<link rel="stylesheet" href="./signRegister.css" />
 </head>
 
 <body>
 	<div class="signin">
-		<h1>Register</h1>
-		<form action="" method="post">
-			<input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="off" /><br />
-			<input type="text" id="lname" name="lname" required placeholder="Last Name" autocomplete="off" /><br />
-			<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-			<input id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
-			<input type="submit" value="Register" />
-		</form>
+		<div class="left">
+			<img src="./Assets/register.jpg" />
+			<p>When You Register you Get Access To More Features Such As Our Virus Checker Tool Which Helps You To Identify If Any Of Your File Has Virus And Our Curated List Of Products That We Recommend</p>
+		</div>
+		<div class="right">
+			<h1>Register</h1>
+			<form action="" method="post">
+				<input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="off" /><br />
+				<input type="text" id="lname" name="lname" required placeholder="Last Name" autocomplete="off" /><br />
+				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
+				<input id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
+				<input type="submit" value="Register" />
+			</form>
+		</div>
+
 	</div>
 </body>
 
