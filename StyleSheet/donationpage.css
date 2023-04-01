@@ -8,6 +8,10 @@ body {
 	color: white;
 	padding: 0 2rem 1rem 2rem;
 }
+.donation h1 {
+	color: white;
+	text-align: center;
+}
 .main {
 	margin-top: 5rem;
 	max-width: 75%;
@@ -39,8 +43,8 @@ body {
 	margin: 2rem 0 2rem 0;
 }
 .donation input {
-	display: block;
-	margin: 0 auto;
+	display: inline-block;
+	margin: 2rem auto;
 	border: 2px solid #3e185d;
 	background-color: #fa7268;
 	border-radius: 20px;
@@ -49,17 +53,40 @@ body {
 	color: white;
 	text-align: center;
 }
+::placeholder {
+	color: white;
+}
+.choices {
+	display: flex;
+	justify-content: space-evenly;
+}
+.choice {
+	border-radius: 25px;
+	border-style: none;
+	border: 2px solid #120e2b;
+	background-color: #f97169;
+	border-color: none;
+}
+#willing {
+	display: inline-block;
+	margin-left: 20%;
+}
+.choice p {
+	color: white;
+	padding: 0.5rem;
+	margin: 0;
+}
 .button {
 	display: block;
 	color: white;
 	text-align: center;
-	width: 10rem;
 	cursor: pointer;
 	background-color: #3e185d;
 	border-radius: 20px;
-	padding: 2rem 2rem;
-	margin-top: 1rem;
-	margin-left: 36%;
+	padding: 1rem;
+	margin: 2rem auto;
+	border-style: none;
+	border: 2px solid #120e2b;
 }
 .button p {
 	margin: 0 auto;
@@ -69,10 +96,12 @@ body {
 	animation-name: button-hover;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
+	border: 2px solid #120e2b;
 }
 @keyframes button-hover {
 	100% {
 		border-color: #fa7268;
 		background-color: #fa7268;
+		border: 2px solid #120e2b;
 	}
 }
