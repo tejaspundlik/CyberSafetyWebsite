@@ -14,14 +14,16 @@
 	background-color: #cc2c67;
 }
 
+.navicon img {
+	max-width: 20%;
+}
 .navicon:hover {
 	transition: 0.5s;
 	background-color: #f97169;
 }
 
 .navicon p {
-	min-width: 30%;
-	padding: 1;
+	display: inline-block;
 	margin: 0;
 	color: white;
 	align-items: center;
