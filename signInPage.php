@@ -1,5 +1,6 @@
 <?php
-include './NavBar/navbar.php';
+session_start();
+include './NavBar/navbarBefore.php';
 if (isset($_POST['email']) && $_POST['email'] != '') {
 	$mail = $_POST['email'];
 	$formpassword = $_POST['password'];
@@ -19,7 +20,11 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$result = $stmt->get_result();
 	$num_rows = mysqli_num_rows($result);
 	if ($result && $num_rows >= 1) {
-		echo "<script>alert('Valid email or password! You will now be redirected');</script>";
+		$_SESSION['loggedIn'] = true;
+		$stmt->close();
+		$conn->close();
+		header('Location:./homepage.php');
+		//echo "<script>alert('Valid email or password! You will now be redirected');</script>";
 	} else {
 		echo "<script>alert('Invalid email or password!');</script>";
 	}

@@ -20,8 +20,8 @@
 }
 
 .navicon p {
-	display: inline-block;
-	padding: 0;
+	min-width: 30%;
+	padding: 1;
 	margin: 0;
 	color: white;
 	align-items: center;

@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./homepage.html">
+            <a class="navbar-brand" href="../homepage.php">
                 <img width="15%" style="margin-left: 1rem" src="../Assets/homeicon.png" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../passchecker.php">
                             <div class="navicon">
                                 <img src="../Assets/lock.gif" width="24.5%" />
                                 <p>Password Tester</p>
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./reviewpage.html">
+                        <a class="nav-link" href="../reviewpage.php">
                             <div class="navicon">
                                 <img src="../Assets/recommend.gif" width="28.5%" />
                                 <p>Products</p>
@@ -47,10 +47,17 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactpage.php">
+                        <a class="nav-link" href="../contactpage.php">
                             <div class="navicon">
                                 <img src="../Assets/location.gif" width="27.5%" />
                                 <p>Contact Us</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../signOut.php">
+                            <div class="navicon">
+                                <p>Sign-Out</p>
                             </div>
                         </a>
                     </li>

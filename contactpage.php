@@ -1,5 +1,14 @@
 <?php
-include './NavBar/navbar.php';
+session_start();
+
+// Check if the user is logged in
+if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
+	// User is logged in, show after-login-navbar.php
+	include './NavBar/navbarAfter.php';
+} else {
+	// User is not logged in, show before-login-navbar.php
+	include './NavBar/navbarBefore.php';
+}
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
