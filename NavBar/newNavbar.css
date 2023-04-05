@@ -4,15 +4,20 @@
 
 .navImage {
 	max-width: 25%;
+	height: auto;
 }
 .navText {
 	color: white;
 	display: inline-block;
+	font-size: medium;
+	padding-top: 4%;
+	text-align: center;
 }
 .nav-link {
 	background-color: #cc2c67;
 	border-radius: 50px;
 	margin: 0 0.5rem;
+	justify-content: center;
 }
 .nav-link:hover {
 	transition: 0.5s;
