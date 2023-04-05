@@ -110,6 +110,7 @@ if ($mail_send == false and $_SERVER['REQUEST_METHOD'] == 'POST') {
 			</div>
 		</div>
 	</div>
+	<?php include './Footer/footer.php'; ?>
 </body>
 <script src="./Script/contactpage.js"></script>
 

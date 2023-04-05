@@ -73,6 +73,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 			</form>
 		</div>
 	</div>
+	<?php include './Footer/footer.php'; ?>
 </body>
 <script>
 	const MININUM_DONATION = 4.99;

@@ -49,6 +49,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 			<p>Next</p>
 		</button>
 	</div>
+	<?php include './Footer/footer.php'; ?>
 	<script src="./QuizBackend/quiz.js"></script>
 </body>
 

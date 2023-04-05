@@ -61,8 +61,8 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 				<input type="submit" value="Register" />
 			</form>
 		</div>
-
 	</div>
+	<?php include './Footer/footer.php'; ?>
 </body>
 
 </html>

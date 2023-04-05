@@ -100,6 +100,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 			<br />
 		</div>
 	</div>
+	<?php include './Footer/footer.php'; ?>
 	<script>
 		var slider = document.querySelector("#slider");
 		var slider_right = document.querySelector("#slider-label-right");

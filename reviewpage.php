@@ -27,6 +27,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 		<h1>Products we recommend</h1>
 	</div>
 	<div class="content"></div>
+	<?php include './Footer/footer.php'; ?>
 	<script src="./Script/review.js"></script>
 </body>
 

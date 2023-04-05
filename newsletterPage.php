@@ -64,6 +64,7 @@ if (isset($_POST['name']) != '' and isset($_POST['email']) != '') {
 			</form>
 		</div>
 	</div>
+	<?php include './Footer/footer.php'; ?>
 </body>
 
 </html>

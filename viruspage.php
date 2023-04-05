@@ -66,6 +66,7 @@
 		<input type="file" name="fileToScan" /><br />
 		<input type="submit" value="Scan" />
 	</form>
+	<?php include './Footer/footer.php'; ?>
 </body>
 
 </html>

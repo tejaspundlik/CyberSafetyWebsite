@@ -43,3 +43,4 @@ if (isset($_POST['url'])) {
     URL to scan: <input type="text" name="url"><br>
     <input type="submit" value="Scan">
 </form>
+<?php include './Footer/footer.php'; ?>
