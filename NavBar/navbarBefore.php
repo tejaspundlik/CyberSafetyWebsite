@@ -22,12 +22,6 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../newsletterPage.php">
-                        <img class="navImage" src="../Assets/virus.gif" />
-                        <p class="navText">Newsletter</p>
-                    </a>
-                </li>
-                <li class="nav-item active">
                     <a class="nav-link" href="../passchecker.php">
                         <img class="navImage" src="../Assets/virus.gif" />
                         <p class="navText">Password Test</p>
@@ -37,12 +31,6 @@
                     <a class="nav-link" href="../contactpage.php">
                         <img class="navImage" src="../Assets/virus.gif" />
                         <p class="navText">Contact Us</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../donation.php">
-                        <img class="navImage" src="../Assets/virus.gif" />
-                        <p class="navText">Donate</p>
                     </a>
                 </li>
                 <li class="nav-item">

@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+img {
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	background-color: #120e2b;
+	color: #f97169;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+.outer {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.footerh4 {
+	color: #f97169;
+}
+.footerp {
+	margin-bottom: 2rem;
+}
+.footera {
+	background-color: #cc2c67;
+	color: #fff;
+	margin: 3rem;
+	margin-bottom: 5rem;
+	padding: 1rem;
+	border-radius: 50px;
+	text-decoration: none;
+}
+.footera:hover {
+	transition: 0.5s;
+	background-color: #f97169;
+}
