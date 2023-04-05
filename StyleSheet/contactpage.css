@@ -4,11 +4,9 @@ body {
 	background-size: cover;
 }
 .container {
-	position: relative;
 	width: 100%;
-	min-height: 100vh;
-	padding: 10rem 0 5rem 0;
 	overflow: hidden;
+	margin-top: 6rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;

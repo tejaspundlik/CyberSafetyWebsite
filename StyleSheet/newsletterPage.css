@@ -9,9 +9,8 @@ body {
 	padding: 0 2rem 1rem 2rem;
 }
 .main {
-	margin-top: 5rem;
-	max-width: 75%;
-	margin: 10rem auto 0 auto;
+	max-width: 80%;
+	margin: 3rem auto 0 auto;
 	display: flex;
 }
 .message {

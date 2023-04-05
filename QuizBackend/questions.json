@@ -1,1 +1,242 @@
-[{"question":"Which of the following is NOT a secure password?","a":"Passw0rd!","b":"7V@#t&Jn","c":"password12345","d":"tY4m$j^s","correct":"C"},{"question":"Which of the following is NOT an example of multi-factor authentication?","a":"Password and security question","b":"Password and fingerprint scan","c":"Password and facial recognition","d":"Password only","correct":"D"},{"question":"What is the best way to keep your passwords safe?","a":"Use a password manager","b":"Write them down on a sticky note","c":"Tell your friends","d":"Use easy-to-guess passwords","correct":"A"},{"question":"What is phishing?","a":"A type of fishing","b":"A type of cyber attack","c":"A type of social media post","d":"A type of website","correct":"B"},{"question":"What is malware?","a":"A type of furniture","b":"A type of software","c":"A type of food","d":"A type of car","correct":"B"},{"question":"What is a VPN?","a":"A virtual private network","b":"A virtual public network","c":"A virus protection network","d":"A virtual personal network","correct":"A"},{"question":"What is two-factor authentication?","a":"A way to log in with only one factor","b":"A way to log in with two factors","c":"A way to log in with three factors","d":"A way to log in with four factors","correct":"B"},{"question":"What is a firewall?","a":"A wall made of fire","b":"A type of computer virus","c":"A security system for your computer","d":"A type of software","correct":"C"},{"question":"What is a DDoS attack?","a":"A type of dance move","b":"A type of cyber attack","c":"A type of video game","d":"A type of website","correct":"B"},{"question":"What is encryption?","a":"A way to keep your data private","b":"A way to share your data publicly","c":"A way to delete your data","d":"A way to copy your data","correct":"A"},{"question":"What is a data breach?","a":"A type of cyber attack","b":"A type of password","c":"A type of computer virus","d":"A type of website","correct":"A"},{"question":"What is social engineering?","a":"A type of social media post","b":"A type of cyber attack","c":"A type of computer virus","d":"A type of website","correct":"B"},{"question":"What is a phishing email?","a":"An email that asks for personal information","b":"An email that contains a virus","c":"An email that is marked as spam","d":"An email that is sent to a large group of people","correct":"A"},{"question":"What is a keylogger?","a":"A type of keyboard","b":"A type of computer virus","c":"A type of software","d":"A type of hardware","correct":"D"},{"question":"What is a botnet?","a":"A type of robot","b":"A group of computers controlled by a hacker","c":"A type of software","d":"A type of virus","correct":"B"},{"question":"What is a zero-day vulnerability?","a":"A type of computer virus","b":"A type of security hole","c":"A type of firewall","d":"A type of encryption","correct":"B"},{"question":"What is a man-in-the-middle attack?","a":"A type of cyber attack","b":"A type of password","c":"A type of website","d":"A type of software","correct":"A"},{"question":"What is a SQL injection?","a":"A type of computer virus","b":"A type of password","c":"A type of cyber attack","d":"A type of website","correct":"C"},{"question":"What is a brute-force attack?","a":"A type of computer virus","b":"A type of encryption","c":"A type of keyboard","d":"A type of cyber attack","correct":"D"},{"question":"What is a vulnerability?","a":"A weakness in a system that can be exploited by attackers","b":"A type of encryption","c":"A type of firewall","d":"A type of software","correct":"A"},{"question":"What is a patch?","a":"A software update that fixes vulnerabilities","b":"A type of firewall","c":"A type of encryption","d":"A type of virus","correct":"A"},{"question":"What is a sandbox?","a":"A type of playground","b":"A virtual environment used to test software","c":"A type of computer virus","d":"A type of firewall","correct":"B"},{"question":"What is a web application firewall?","a":"A type of software that protects web applications from attacks","b":"A type of firewall for desktop applications","c":"A type of encryption","d":"A type of virus","correct":"A"},{"question":"What is DNS spoofing?","a":"A type of computer virus","b":"A type of cyber attack that redirects users to fake websites","c":"A type of encryption","d":"A type of firewall","correct":"B"},{"question":"What is a digital certificate?","a":"A way to verify the identity of a website or user","b":"A type of encryption","c":"A type of firewall","d":"A type of computer virus","correct":"A"},{"question":"What is social media engineering?","a":"A type of cyber attack that targets social media users","b":"A type of social media post","c":"A type of encryption","d":"A type of firewall","correct":"A"},{"question":"What is a password policy?","a":"A set of rules for creating and managing passwords","b":"A type of software","c":"A type of firewall","d":"A type of virus","correct":"A"},{"question":"What is a brute-force attack?","a":"A type of cyber attack that uses automated software to guess passwords","b":"A type of encryption","c":"A type of firewall","d":"A type of computer virus","correct":"A"},{"question":"What is ransomware?","a":"A type of malware that encrypts a user's files and demands payment to restore access","b":"A type of encryption","c":"A type of firewall","d":"A type of computer virus","correct":"A"},{"question":"What is spyware?","a":"A type of malware that secretly monitors a user's activity","b":"A type of encryption","c":"A type of firewall","d":"A type of computer virus","correct":"A"}]
+[
+    {
+        "question": "Which of the following is NOT a secure password?",
+        "a": "Passw0rd!",
+        "b": "7V@#t&Jn",
+        "c": "password12345",
+        "d": "tY4m$j^s",
+        "correct": "C"
+    },
+    {
+        "question": "Which of the following is NOT an example of multi-factor authentication?",
+        "a": "Password and security question",
+        "b": "Password and fingerprint scan",
+        "c": "Password and facial recognition",
+        "d": "Password only",
+        "correct": "D"
+    },
+    {
+        "question": "What is the best way to keep your passwords safe?",
+        "a": "Use a password manager",
+        "b": "Write them down on a sticky note",
+        "c": "Tell your friends",
+        "d": "Use easy-to-guess passwords",
+        "correct": "A"
+    },
+    {
+        "question": "What is phishing?",
+        "a": "A type of fishing",
+        "b": "A type of cyber attack",
+        "c": "A type of social media post",
+        "d": "A type of website",
+        "correct": "B"
+    },
+    {
+        "question": "What is malware?",
+        "a": "A type of furniture",
+        "b": "A type of software",
+        "c": "A type of food",
+        "d": "A type of car",
+        "correct": "B"
+    },
+    {
+        "question": "What is a VPN?",
+        "a": "A virtual private network",
+        "b": "A virtual public network",
+        "c": "A virus protection network",
+        "d": "A virtual personal network",
+        "correct": "A"
+    },
+    {
+        "question": "What is two-factor authentication?",
+        "a": "A way to log in with only one factor",
+        "b": "A way to log in with two factors",
+        "c": "A way to log in with three factors",
+        "d": "A way to log in with four factors",
+        "correct": "B"
+    },
+    {
+        "question": "What is a firewall?",
+        "a": "A wall made of fire",
+        "b": "A type of computer virus",
+        "c": "A security system for your computer",
+        "d": "A type of software",
+        "correct": "C"
+    },
+    {
+        "question": "What is a DDoS attack?",
+        "a": "A type of dance move",
+        "b": "A type of cyber attack",
+        "c": "A type of video game",
+        "d": "A type of website",
+        "correct": "B"
+    },
+    {
+        "question": "What is encryption?",
+        "a": "A way to keep your data private",
+        "b": "A way to share your data publicly",
+        "c": "A way to delete your data",
+        "d": "A way to copy your data",
+        "correct": "A"
+    },
+    {
+        "question": "What is a data breach?",
+        "a": "A type of cyber attack",
+        "b": "A type of password",
+        "c": "A type of computer virus",
+        "d": "A type of website",
+        "correct": "A"
+    },
+    {
+        "question": "What is social engineering?",
+        "a": "A type of social media post",
+        "b": "A type of cyber attack",
+        "c": "A type of computer virus",
+        "d": "A type of website",
+        "correct": "B"
+    },
+    {
+        "question": "What is a phishing email?",
+        "a": "An email that asks for personal information",
+        "b": "An email that contains a virus",
+        "c": "An email that is marked as spam",
+        "d": "An email that is sent to a large group of people",
+        "correct": "A"
+    },
+    {
+        "question": "What is a keylogger?",
+        "a": "A type of keyboard",
+        "b": "A type of computer virus",
+        "c": "A type of software",
+        "d": "A type of hardware",
+        "correct": "D"
+    },
+    {
+        "question": "What is a botnet?",
+        "a": "A type of robot",
+        "b": "A group of computers controlled by a hacker",
+        "c": "A type of software",
+        "d": "A type of virus",
+        "correct": "B"
+    },
+    {
+        "question": "What is a zero-day vulnerability?",
+        "a": "A type of computer virus",
+        "b": "A type of security hole",
+        "c": "A type of firewall",
+        "d": "A type of encryption",
+        "correct": "B"
+    },
+    {
+        "question": "What is a man-in-the-middle attack?",
+        "a": "A type of cyber attack",
+        "b": "A type of password",
+        "c": "A type of website",
+        "d": "A type of software",
+        "correct": "A"
+    },
+    {
+        "question": "What is a SQL injection?",
+        "a": "A type of computer virus",
+        "b": "A type of password",
+        "c": "A type of cyber attack",
+        "d": "A type of website",
+        "correct": "C"
+    },
+    {
+        "question": "What is a brute-force attack?",
+        "a": "A type of computer virus",
+        "b": "A type of encryption",
+        "c": "A type of keyboard",
+        "d": "A type of cyber attack",
+        "correct": "D"
+    },
+    {
+        "question": "What is a vulnerability?",
+        "a": "A weakness in a system that can be exploited by attackers",
+        "b": "A type of encryption",
+        "c": "A type of firewall",
+        "d": "A type of software",
+        "correct": "A"
+    },
+    {
+        "question": "What is a patch?",
+        "a": "A software update that fixes vulnerabilities",
+        "b": "A type of firewall",
+        "c": "A type of encryption",
+        "d": "A type of virus",
+        "correct": "A"
+    },
+    {
+        "question": "What is a sandbox?",
+        "a": "A type of playground",
+        "b": "A virtual environment used to test software",
+        "c": "A type of computer virus",
+        "d": "A type of firewall",
+        "correct": "B"
+    },
+    {
+        "question": "What is a web application firewall?",
+        "a": "A type of software that protects web applications from attacks",
+        "b": "A type of firewall for desktop applications",
+        "c": "A type of encryption",
+        "d": "A type of virus",
+        "correct": "A"
+    },
+    {
+        "question": "What is DNS spoofing?",
+        "a": "A type of computer virus",
+        "b": "A type of cyber attack that redirects users to fake websites",
+        "c": "A type of encryption",
+        "d": "A type of firewall",
+        "correct": "B"
+    },
+    {
+        "question": "What is a digital certificate?",
+        "a": "A way to verify the identity of a website or user",
+        "b": "A type of encryption",
+        "c": "A type of firewall",
+        "d": "A type of computer virus",
+        "correct": "A"
+    },
+    {
+        "question": "What is social media engineering?",
+        "a": "A type of cyber attack that targets social media users",
+        "b": "A type of social media post",
+        "c": "A type of encryption",
+        "d": "A type of firewall",
+        "correct": "A"
+    },
+    {
+        "question": "What is a password policy?",
+        "a": "A set of rules for creating and managing passwords",
+        "b": "A type of software",
+        "c": "A type of firewall",
+        "d": "A type of virus",
+        "correct": "A"
+    },
+    {
+        "question": "What is a brute-force attack?",
+        "a": "A type of cyber attack that uses automated software to guess passwords",
+        "b": "A type of encryption",
+        "c": "A type of firewall",
+        "d": "A type of computer virus",
+        "correct": "A"
+    },
+    {
+        "question": "What is ransomware?",
+        "a": "A type of malware that encrypts a user's files and demands payment to restore access",
+        "b": "A type of encryption",
+        "c": "A type of firewall",
+        "d": "A type of computer virus",
+        "correct": "A"
+    },
+    {
+        "question": "What is spyware?",
+        "a": "A type of malware that secretly monitors a user's activity",
+        "b": "A type of encryption",
+        "c": "A type of firewall",
+        "d": "A type of computer virus",
+        "correct": "A"
+    }
+]

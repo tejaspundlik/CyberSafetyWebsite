@@ -24,3 +24,4 @@ $file = fopen("questions.json", "w");
 fwrite($file, $json);
 fclose($file);
 $conn->close();
+header('Location:./quiz.php');

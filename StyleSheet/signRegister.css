@@ -6,9 +6,10 @@ body {
 }
 
 .signin {
+	width: 60%;
 	display: flex;
 	background-color: #cc2c67;
-	margin: 10rem 30rem 0 30rem;
+	margin: 3rem 0 0 20rem;
 	padding: 3rem;
 	border-radius: 50px;
 }
@@ -18,15 +19,21 @@ body {
 	background-color: #f97169;
 	border-radius: 50px;
 	align-items: center;
+	flex: 1;
+}
+.right {
+	flex: 1;
 }
 .left p {
 	color: white;
 	text-align: center;
+	max-width: auto;
 }
 .left img {
-	margin: 2rem 0;
+	display: inline-block;
+	margin: 4rem 6rem;
 	border-radius: 25px;
-	max-width: 100%;
+	max-width: 50%;
 }
 .right a {
 	text-decoration: none;

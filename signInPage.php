@@ -33,7 +33,6 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,7 +48,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	<div class="signin">
 		<div class="left">
 			<img src="./Assets/signin.jpg" />
-			<p>Sign-In To Access All The Features Available To You</p>
+			<p>Sign-In To Access All The Features Available To You Such As The File Scanner And The Curated Product Recomendations</p>
 		</div>
 		<div class="right">
 			<h1>Sign In</h1>
