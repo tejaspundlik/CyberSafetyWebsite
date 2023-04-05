@@ -74,7 +74,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 		<div class="division3">
 			<div class="password-generator">
 				<div class="leftbox">
-					<img src="./Assets/passwordGenBox.png" width="50%" />
+					<img class="lock" src="./Assets/passwordGenBox.png" width="50%" />
 				</div>
 				<div class="rightbox">
 					<h1>Generate a Strong Password</h1>
