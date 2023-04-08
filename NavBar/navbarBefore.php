@@ -34,8 +34,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../signInPage.php"></a>
-                    <p class="navText">Sign In</p>
+                    <a class="nav-link" href="../signInPage.php">
+                        <p class="navTextSign">Sign In</p>
                     </a>
                 </li>
             </ul>

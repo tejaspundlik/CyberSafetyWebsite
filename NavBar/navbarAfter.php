@@ -47,6 +47,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../signOut.php">
+                        <img class="navImage" src="../Assets/logout2.gif" />
                         <p class="navText">Sign Out</p>
                     </a>
                 </li>

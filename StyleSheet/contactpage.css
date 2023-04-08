@@ -6,7 +6,7 @@ body {
 .container {
 	width: 100%;
 	overflow: hidden;
-	margin-top: 6rem;
+	margin: 6rem 8rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
