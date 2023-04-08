@@ -45,12 +45,15 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 				</li>
 			</ul>
 		</div>
-		<button class="button" id="submit">
-			<p>Next</p>
-		</button>
+
 	</div>
-	<?php include './Footer/footer.php'; ?>
-	<script src="./QuizBackend/quiz.js"></script>
+	<button class="button" id="submit">
+		<p>Next</p>
+	</button>
+	<footer>
+		<?php include './Footer/footer.php'; ?>
+	</footer>
 </body>
+<script src="./QuizBackend/quiz.js"></script>
 
 </html>

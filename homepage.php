@@ -90,7 +90,10 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
       </a>
     </div>
   </div>
-  <?php include './Footer/footer.php'; ?>
+  <footer>
+    <?php include './Footer/footer.php'; ?>
+  </footer>
+
 </body>
 
 </html>

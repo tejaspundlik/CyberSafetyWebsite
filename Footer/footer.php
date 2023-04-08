@@ -9,24 +9,21 @@
 </head>
 
 <body>
-	<footer>
-		<br>
-		<div class="outer">
-			<div>
-				<h4 class="footerh4">Donate</h4>
-				<p class="footerp">Help support our cause by making a donation today.</p>
-				<a class="footera" href="../donation.php">Donate Now</a>
-			</div>
-			<div>
-				<h4 class="footerh4">Newsletter</h4>
-				<p class="footerp">
-					Sign up for our newsletter to stay up-to-date on our latest news and
-					events.
-				</p>
-				<a class="footera" href="../newsletterPage.php">Subscribe</a>
-			</div>
+	<div class="footerouter">
+		<div>
+			<h4 class="footerh4">Donate</h4>
+			<p class="footerp">Help support our cause by making a donation today.</p>
+			<a class="footera" href="../donation.php">Donate Now</a>
 		</div>
-	</footer>
+		<div>
+			<h4 class="footerh4">Newsletter</h4>
+			<p class="footerp">
+				Sign up for our newsletter to stay up-to-date on our latest news and
+				events.
+			</p>
+			<a class="footera" href="../newsletterPage.php">Subscribe</a>
+		</div>
+	</div>
 </body>
 
 </html>

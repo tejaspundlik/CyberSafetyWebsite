@@ -1,19 +1,10 @@
-body {
+.footerouter {
 	margin: 0;
-	padding: 0;
-}
-img {
-	margin: 0;
-	padding: 0;
-}
-
-footer {
 	background-color: #120e2b;
 	color: #f97169;
-	padding-bottom: 2rem;
+	padding-bottom: 4rem;
+	padding-top: 2rem;
 	text-align: center;
-}
-.outer {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
