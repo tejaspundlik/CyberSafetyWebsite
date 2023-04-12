@@ -7,8 +7,17 @@
 
 <body>
 	<h1>VirusTotal API Demo</h1>
-
 	<?php
+	session_start();
+
+	// Check if the user is logged in
+	if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
+		// User is logged in, show after-login-navbar.php
+		include './NavBar/navbarAfter.php';
+	} else {
+		// User is not logged in, show before-login-navbar.php
+		include './NavBar/navbarBefore.php';
+	}
 	// Check if form was submitted
 	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		// Define API endpoint and API key
@@ -59,6 +68,7 @@
 	}
 
 	?>
+
 
 
 	<form method="post" enctype="multipart/form-data">

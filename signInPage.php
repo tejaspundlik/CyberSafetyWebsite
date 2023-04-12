@@ -8,12 +8,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$username = "sql12608164";
 	$password = "eDcWvKrJUv";
 	$dbname = "sql12608164";
-	$conn = new mysqli(
-		$servername,
-		$username,
-		$password,
-		$dbname
-	);
+	$conn = new mysqli($servername, $username, $password, $dbname);
 	$stmt = $conn->prepare("SELECT * FROM users WHERE email = ? and userpassword = ?");
 	$stmt->bind_param("ss", $mail, $formpassword);
 	$stmt->execute();
