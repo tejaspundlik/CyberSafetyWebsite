@@ -1,0 +1,156 @@
+h1,
+h2,
+h3 {
+  color: white;
+  padding: 0 10% 0 10%;
+}
+p {
+  color: rgb(233, 233, 194);
+  font-size: large;
+  padding: 0 10% 0 10%;
+  margin: 2% 0 2% 0;
+}
+ul {
+  padding: 0 10% 0 10%;
+  color: #fa7268;
+  cursor: pointer;
+}
+a {
+  color: #fa7268;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(233, 233, 194);
+}
+.division1 {
+  padding-top: 150px;
+  height: 100vh;
+  background-color: #120e2b;
+}
+.container2 {
+  background-color: #c62368;
+}
+
+.gradient-text {
+  text-align: center;
+  font-size: max(3.5vw, 35px);
+  background: linear-gradient(to right, #a200ff, #fa7268);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  width: 100vw;
+  font-weight: 800;
+}
+.pagecontainer {
+  display: flex;
+  flex-direction: column;
+}
+#img1 {
+  width: 70%;
+  margin-left: 10%;
+}
+@keyframes grow {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+#input {
+  display: flex;
+  padding-top: 5vh;
+  background-color: #522056;
+  height: 40vh;
+  width: 30vw;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+#output {
+  padding-top: 5vh;
+  background-color: #f97169;
+  height: 40vh;
+  width: 30vw;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.caeser-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  color: white;
+  font-size: x-large;
+  height: 40vh;
+  width: 60vw;
+  overflow: hidden;
+}
+label {
+  margin-top: 10px;
+}
+input[type="text"],
+select {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+}
+button {
+  height: 40px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #3e185d;
+  border-radius: 7px;
+  margin: 10px 2px;
+  display: inline-block;
+}
+.diamond {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #f97169;
+  position: relative;
+  transform: rotate(45deg);
+  right: 50%;
+  top: 10%;
+}
+.container3 {
+  width: 100vw;
+  size: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.example-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(138, 15, 66, 0.8);
+  border: solid rgb(211, 197, 197) 2px;
+  width: 60vw;
+  border-radius: 20px;
+  margin-left: 10vw;
+  padding-top: 10px;
+}
+.example_text {
+  width: 70vw;
+}
+#img2 {
+  margin-left: 5%;
+  width: 8%;
+  height: 8%;
+}
+#img3 {
+  padding-left: 10%;
+}
