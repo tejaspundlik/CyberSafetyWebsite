@@ -45,7 +45,7 @@
 		} else {
 			echo "Scan submitted. Response from
 		VirusTotal API:<br /><br />";
-			echo $response;
+			//echo $response;
 		}
 		// First, extract the permalink value from the JSON response
 		$data = json_decode($response, true);
