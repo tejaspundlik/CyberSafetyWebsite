@@ -21,21 +21,21 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 
         <?php
         if (isset($_FILES['file'])) {
-            $apikey = '565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6';
             $file = $_FILES['file'];
-
             // Get the SHA-256 hash of the file
             $hash = hash_file('sha256', $file['tmp_name']);
-
             // Check if the file has already been scanned
             $check_url = 'https://www.virustotal.com/api/v3/files/' . $hash;
             $ch = curl_init();
+            $headers = [
+                'x-apikey: 565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6'
+            ];
             curl_setopt($ch, CURLOPT_URL, $check_url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             $response = curl_exec($ch);
             $result = json_decode($response);
-
+            curl_close($ch);
             if (property_exists($result, 'error') && $result->error) {
                 // If the file has not been scanned yet, send it to VirusTotal for scanning
                 $scan_url = 'https://www.virustotal.com/api/v3/files';
@@ -45,7 +45,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 curl_setopt($ch, CURLOPT_POST, true);
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
+                curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
                 $response = curl_exec($ch);
                 $result = json_decode($response);
                 curl_close($ch);
@@ -55,7 +55,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     $ch = curl_init();
                     curl_setopt($ch, CURLOPT_URL, $check_url);
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
+                    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
                     $response = curl_exec($ch);
                     $result = json_decode($response);
                     curl_close($ch);
@@ -67,9 +67,8 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             } else {
                 echo "<p class='safe'>The File Is Safe</p><br>";
             }
-            echo print_r($result);
-            echo "<a class='infourl' href='{$result->data->links->self}' target='_blank'>For more info click here</a><br>";
-            curl_close($ch);
+            //$link = "https://www.virustotal.com/gui/file/" . $hash;
+            echo "<a class='infourl' href=$link target='_blank'>For more info click here</a><br>";
         }
         ?>
     </div>
