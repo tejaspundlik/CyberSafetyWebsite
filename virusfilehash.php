@@ -67,7 +67,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             } else {
                 echo "<p class='safe'>The File Is Safe</p><br>";
             }
-            //$link = "https://www.virustotal.com/gui/file/" . $hash;
+            $link = "https://www.virustotal.com/gui/file/" . $hash;
             echo "<a class='infourl' href=$link target='_blank'>For more info click here</a><br>";
         }
         ?>
