@@ -48,7 +48,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
                 $response = curl_exec($ch);
                 $result = json_decode($response);
-                curl_close($ch);
                 // Loop until the scan is completed
                 while ($result->data->attributes->status != 'completed') {
                     sleep(1); // Wait for 10 seconds before checking again
@@ -61,6 +60,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     curl_close($ch);
                 }
             }
+            curl_close($ch);
             // Display the final result
             if ($result->data->attributes->last_analysis_stats->malicious > 0) {
                 echo "<p class='notsafe'>The File Is Infected</p><br>";
