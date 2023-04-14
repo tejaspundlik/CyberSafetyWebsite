@@ -21,18 +21,15 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 
         <?php
         if (isset($_FILES['file'])) {
+            $apikey = "565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6";
             $file = $_FILES['file'];
-            // Get the SHA-256 hash of the file
             $hash = hash_file('sha256', $file['tmp_name']);
             // Check if the file has already been scanned
             $check_url = 'https://www.virustotal.com/api/v3/files/' . $hash;
             $ch = curl_init();
-            $headers = [
-                'x-apikey: 565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6'
-            ];
             curl_setopt($ch, CURLOPT_URL, $check_url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
             $response = curl_exec($ch);
             $result = json_decode($response);
             curl_close($ch);
@@ -45,23 +42,18 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 curl_setopt($ch, CURLOPT_POST, true);
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
+                curl_exec($ch);
+                $hash = hash_file('sha256', $file['tmp_name']);
+                $check_url = 'https://www.virustotal.com/api/v3/files/' . $hash;
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $check_url);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
                 $response = curl_exec($ch);
                 $result = json_decode($response);
-                // Loop until the scan is completed
-                while ($result->data->attributes->status != 'completed') {
-                    sleep(1); // Wait for 10 seconds before checking again
-                    $ch = curl_init();
-                    curl_setopt($ch, CURLOPT_URL, $check_url);
-                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-                    $response = curl_exec($ch);
-                    $result = json_decode($response);
-                    curl_close($ch);
-                }
+                curl_close($ch);
             }
-            curl_close($ch);
-            // Display the final result
             if ($result->data->attributes->last_analysis_stats->malicious > 0) {
                 echo "<p class='notsafe'>The File Is Infected</p><br>";
             } else {
