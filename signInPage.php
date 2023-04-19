@@ -8,12 +8,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$username = "sql12608164";
 	$password = "eDcWvKrJUv";
 	$dbname = "sql12608164";
-	$conn = new mysqli(
-		$servername,
-		$username,
-		$password,
-		$dbname
-	);
+	$conn = new mysqli($servername, $username, $password, $dbname);
 	$stmt = $conn->prepare("SELECT * FROM users WHERE email = ? and userpassword = ?");
 	$stmt->bind_param("ss", $mail, $formpassword);
 	$stmt->execute();
@@ -45,7 +40,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 </head>
 
 <body>
-	<div class="signin">
+	<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
 		<div class="left">
 			<img src="./Assets/signin.jpg" />
 			<p>Sign-In To Access All The Features Available To You Such As The File Scanner And The Curated Product Recomendations</p>
