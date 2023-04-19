@@ -4,6 +4,9 @@ h3 {
   color: white;
   padding: 0 10% 0 10%;
 }
+h3 {
+  margin: 2% 0 2% 0;
+}
 p {
   color: rgb(233, 233, 194);
   font-size: large;
@@ -47,27 +50,18 @@ a:hover {
   flex-direction: column;
 }
 #img1 {
+  width: 40%;
+  padding-left: 10%;
+}
+#img2 {
   position: absolute;
   width: 10%;
   z-index: 10;
-  left: 80vw;
+  left: 89vw;
   animation-name: virusanimation;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
-}
-#img2 {
-  position: absolute;
-  width: 15%;
-  z-index: 10;
-  top: 170vh;
-}
-#img3 {
-  position: absolute;
-  width: 20%;
-  z-index: 10;
-  left: 80vw;
-  top: 205vh;
 }
 #img4 {
   position: absolute;
@@ -139,4 +133,9 @@ a:hover {
   100% {
     transform: scale(1);
   }
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
 }
