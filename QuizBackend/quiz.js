@@ -64,10 +64,12 @@ async function loadQuizData() {
 			if (currentQuiz < randomQuestions.length) {
 				loadQuiz();
 			} else {
-				quiz.innerHTML = `
-           		<h2>You answered ${score}/${randomQuestions.length} questions correctly</h2>
-           		<button class="button" onclick="location.reload()" >Try Again</button>
-           		`;
+				quiz.innerHTML = `<h2>You answered ${score}/${randomQuestions.length} questions correctly</h2>`;
+				const button = document.getElementById("submit");
+				button.querySelector("p").innerHTML = "Try Again";
+				button.addEventListener("click", () => {
+					location.reload();
+				});
 			}
 		}
 	});
