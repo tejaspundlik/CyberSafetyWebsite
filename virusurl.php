@@ -37,7 +37,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 
             // Get the scan ID from the response
             $scan_id = json_decode($response)->scan_id;
-
             // Poll the VirusTotal API until the scan is complete
             $ch = curl_init();
             $url = $report_url . '?apikey=' . $apikey . '&resource=' . $scan_id;

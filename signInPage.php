@@ -40,7 +40,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 </head>
 
 <body>
-	<div class="signin">
+	<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
 		<div class="left">
 			<img src="./Assets/signin.jpg" />
 			<p>Sign-In To Access All The Features Available To You Such As The File Scanner And The Curated Product Recomendations</p>

@@ -42,7 +42,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$mail->Host       = 'smtp.gmail.com';
 	$mail->SMTPAuth   = true;
 	$mail->Username   = 'kjprojects23@gmail.com';
-	$mail->Password   = 'zstnsitmqzmdmsky';
+	$mail->Password   = 'luoemlyzwaxyyaly';
 	$mail->SMTPSecure = 'ssl';
 	$mail->Port       = 465;
 
@@ -55,13 +55,13 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$mail_send = true;
 	echo '<div class="alert alert-success alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
 	<strong>Thank you for your feedback!</strong><hr>We have received your feedback and we are working to resolve it as fast as possible.
-	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
 	</div>';
 }
 if ($mail_send == false and $_SERVER['REQUEST_METHOD'] == 'POST') {
 	echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
 	<strong>Oops! Something went wrong</strong><hr>It\'s not you it\'s us and we are working to resolve it as fast as possible.
-	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
 	</div>';
 }
 ?>
