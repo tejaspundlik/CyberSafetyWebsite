@@ -9,8 +9,11 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 	// User is not logged in, show before-login-navbar.php
 	include './NavBar/navbarBefore.php';
 }
-
-use PHPMailer\PHPMailer\PHPMailer;
+include './mailsend.php';
+if (isset($_POST['email']) && $_POST['email'] != '') {
+	sendmail($_POST['email'], $_POST['Name'], $_POST['message']);
+}
+/*use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
@@ -63,7 +66,7 @@ if ($mail_send == false and $_SERVER['REQUEST_METHOD'] == 'POST') {
 	<strong>Oops! Something went wrong</strong><hr>It\'s not you it\'s us and we are working to resolve it as fast as possible.
 	<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
 	</div>';
-}
+}*/
 ?>
 
 <html lang="en">
