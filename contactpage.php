@@ -13,60 +13,6 @@ include './mailsend.php';
 if (isset($_POST['email']) && $_POST['email'] != '') {
 	sendmail($_POST['email'], $_POST['Name'], $_POST['message']);
 }
-/*use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-require 'phpmailer/src/Exception.php';
-require 'phpmailer/src/PHPMailer.php';
-require 'phpmailer/src/SMTP.php';
-$mail_send = false;
-if (isset($_POST['email']) && $_POST['email'] != '') {
-	$name = $_POST['Name'];
-	$email = $_POST['email'];
-	$feedback = $_POST['message'];
-	$servername = "sql12.freemysqlhosting.net";
-	$username = "sql12608164";
-	$password = "eDcWvKrJUv";
-	$dbname = "sql12608164";
-	$conn = new mysqli(
-		$servername,
-		$username,
-		$password,
-		$dbname
-	);
-	$stmt = $conn->prepare("INSERT INTO user_feedback (email,name,feedback) VALUES (?,?,?)");
-	$stmt->bind_param("sss", $email, $name, $feedback);
-	$stmt->execute();
-	$stmt->close();
-	$conn->close();
-	$mail = new PHPMailer(true);
-	$mail->isSMTP();
-	$mail->Host       = 'smtp.gmail.com';
-	$mail->SMTPAuth   = true;
-	$mail->Username   = 'kjprojects23@gmail.com';
-	$mail->Password   = 'taketheL';
-	$mail->SMTPSecure = 'ssl';
-	$mail->Port       = 465;
-
-	$mail->setFrom($_POST['email']);
-	$mail->addAddress('kjprojects23@gmail.com');
-	$mail->isHTML(true);
-	$mail->Subject = 'Feedback from ' . $_POST['Name'];
-	$mail->Body    = $_POST['message'];
-	$mail->send();
-	$mail_send = true;
-	echo '<div class="alert alert-success alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
-	<strong>Thank you for your feedback!</strong><hr>We have received your feedback and we are working to resolve it as fast as possible.
-	<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
-	</div>';
-}
-if ($mail_send == false and $_SERVER['REQUEST_METHOD'] == 'POST') {
-	echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
-	<strong>Oops! Something went wrong</strong><hr>It\'s not you it\'s us and we are working to resolve it as fast as possible.
-	<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
-	</div>';
-}*/
 ?>
 
 <html lang="en">

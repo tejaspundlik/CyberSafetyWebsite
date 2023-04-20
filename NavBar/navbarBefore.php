@@ -37,7 +37,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../signInPage.php">
-                        <p class="navTextSign">Sign In</p>
+                        <img class="navImage" src="../Assets/signin.gif" />
+                        <p class="navText">Sign In</p>
                     </a>
                 </li>
             </ul>

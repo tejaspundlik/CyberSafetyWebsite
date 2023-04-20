@@ -51,12 +51,10 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 						<button type="button" class="choice" data-amount="14.99">
 							<p>$14.99</p>
 						</button>
-
 						<button type="button" class="choice" data-amount="19.99">
 							<p>Other</p>
 						</button>
 					</div>
-
 					<div class="cta">
 						<button class="button" type="submit">Donate Now</button>
 					</div>
@@ -64,7 +62,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 						You'll be redirected to PayPal to donate.
 					</p>
 				</div>
-
 				<input type="hidden" name="cmd" value="_donations" />
 				<input type="hidden" name="business" value="sb-qyyoc25365716@business.example.com" />
 				<input type="hidden" name="item_name" value="One-time Donation" />
