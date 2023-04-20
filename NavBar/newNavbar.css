@@ -31,6 +31,18 @@
 	transition: 0.5s;
 	background-color: #f97169;
 }
+.dropdown-item {
+	background-color: #cc2c67;
+	border-radius: 50px;
+	margin: 0 0.5rem;
+	justify-content: center;
+	color: white;
+}
+.dropdown-item:hover {
+	transition: 0.5s;
+	background-color: #f97169;
+	color: white;
+}
 .nav-item {
 	max-width: 20%;
 	min-width: 10%;
@@ -38,4 +50,9 @@
 .navbar-nav {
 	display: flex;
 	justify-content: right;
+}
+.dropdown-menu {
+	background-color: #f97169;
+	margin: 1rem;
+	padding: 1rem;
 }
