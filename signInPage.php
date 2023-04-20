@@ -19,9 +19,11 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 		$stmt->close();
 		$conn->close();
 		header('Location:./homepage.php');
-		//echo "<script>alert('Valid email or password! You will now be redirected');</script>";
 	} else {
-		echo "<script>alert('Invalid email or password!');</script>";
+		echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+			<strong>Oops!</strong><hr>Your Email-Id Or Password Is Wrong.
+			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>';
 	}
 	$stmt->close();
 	$conn->close();
@@ -49,7 +51,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 			<h1>Sign In</h1>
 			<form action="" method="post">
 				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				<input id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
+				<input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
 				<input type="submit" value="Sign In" />
 			</form>
 			<a href="./registerPage.php">
