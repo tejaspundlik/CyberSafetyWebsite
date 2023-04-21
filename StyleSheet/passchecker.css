@@ -21,8 +21,8 @@ h1 {
 	height: 110vh;
 }
 .passbox {
-	padding-top: 10vh;
-	margin-top: 11rem;
+	padding-top: 10rem;
+	margin-top: 8rem;
 	background-color: #f97169;
 	border-radius: 15px;
 	height: 60vh;
@@ -48,6 +48,7 @@ p {
 	background-color: #a42668;
 	color: white;
 	font-size: max(3.5vw, 35px);
+	margin-top: -8rem;
 }
 
 label {
@@ -80,6 +81,7 @@ input {
 	flex-direction: column;
 	align-items: center;
 	background-color: #a42668;
+	padding-bottom: 6rem;
 }
 .password-generator {
 	background-color: #a42668;
