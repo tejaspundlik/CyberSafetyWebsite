@@ -45,6 +45,11 @@ a:hover {
 #section1 {
     position: relative;
 }
+#img {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+}
 .pagecontainer {
     display: flex;
     flex-direction: column;
