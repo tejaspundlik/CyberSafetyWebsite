@@ -87,7 +87,7 @@ iframe {
     border: solid rgb(211, 197, 197) 2px;
     width: 60vw;
     border-radius: 20px;
-    margin-left: 2vw;
+    margin: 0 auto;
     padding-top: 10px;
 }
 .example_text {
