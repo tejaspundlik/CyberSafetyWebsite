@@ -51,7 +51,8 @@ a:hover {
 }
 #img1 {
     width: 40%;
-    padding-left: 10%;
+    margin: 0 auto;
+    display: block;
 }
 #section2 {
     position: relative;

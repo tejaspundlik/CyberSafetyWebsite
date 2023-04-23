@@ -140,7 +140,7 @@ button {
     border: solid rgb(211, 197, 197) 2px;
     width: 60vw;
     border-radius: 20px;
-    margin: 0 auto;
+    margin-left: 30%;
     padding-top: 10px;
 }
 .example_text {
