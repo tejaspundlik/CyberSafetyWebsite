@@ -11,6 +11,18 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 }
 ?>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Page</title>
+    <link rel="stylesheet" href="./StyleSheet/virusurl.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./StyleSheet/font.css" />
+</head>
+
 <body>
     <div class="container">
         <form method="post">
@@ -64,120 +76,4 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
         ?>
     </div>
 </body>
-<style>
-    form {
-        display: block;
-        margin: 1rem auto 5rem auto;
-        background-color: #cc2c67;
-        padding: 2rem;
-        border-radius: 50px;
-        max-width: 75%;
-    }
-
-    body {
-        background-color: #120e2b;
-    }
-
-    .container {
-        background-color: #120e2b;
-        margin: 0 10rem 0 10rem;
-        padding: 5rem 10rem;
-    }
-
-    .url {
-        display: block;
-        margin: 1rem auto;
-        color: white;
-        width: 80%;
-        border-radius: 50px;
-        background-color: #f97169;
-        outline: none;
-        border: 2px solid #fafafa;
-        padding: 1rem 3rem;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-
-    }
-
-    .button {
-        display: block;
-        color: white;
-        text-align: center;
-        font-size: 20px;
-        cursor: pointer;
-        margin: 1rem auto;
-        padding: 1rem 3rem;
-        background-color: #fa7268;
-        border-radius: 20px;
-    }
-
-    .button:hover {
-        animation-name: button-hover;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes button-hover {
-        100% {
-            border-color: #fa7268;
-            background-color: #a200ff;
-        }
-    }
-
-    .button:focus {
-        outline: none;
-    }
-
-    label {
-        display: block;
-        margin: 1rem auto;
-        text-align: center;
-        font-size: xx-large;
-        color: white;
-    }
-
-    .scanResult {
-        display: block;
-        margin: 1rem auto;
-        font-size: xx-large;
-        color: white;
-        text-align: center;
-    }
-
-    .safe {
-        background-color: greenyellow;
-        border-radius: 50px;
-        padding: 1rem;
-        text-align: center;
-        color: white;
-        display: block;
-        margin: 1rem auto;
-        font-size: xx-large;
-    }
-
-    .notsafe {
-        background-color: lightcoral;
-        border-radius: 50px;
-        padding: 1rem;
-        text-align: center;
-        color: white;
-        display: block;
-        margin: 1rem auto;
-        font-size: xx-large;
-    }
-
-    .infourl {
-        color: #cc2c67;
-        text-align: center;
-        display: block;
-        margin: 1rem auto;
-        font-size: xx-large;
-        text-decoration: none;
-    }
-
-    .infourl:hover {
-        color: #f97169;
-    }
-</style>
-
 <?php include './Footer/footer.php'; ?>
