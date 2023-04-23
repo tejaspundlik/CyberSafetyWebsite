@@ -1,113 +1,115 @@
 h1,
 h2,
 h3 {
-  color: white;
-  padding: 0 10% 0 10%;
+    color: white;
+    padding: 0 10% 0 10%;
 }
 p {
-  color: rgb(233, 233, 194);
-  font-size: large;
-  padding: 0 10% 0 10%;
-  margin: 2% 0 2% 0;
+    color: rgb(233, 233, 194);
+    font-size: large;
+    padding: 0 10% 0 10%;
+    margin: 2% 0 2% 0;
 }
 ul {
-  padding: 0 10% 0 10%;
-  color: #fa7268;
-  cursor: pointer;
+    padding: 0 10% 0 10%;
+    color: #fa7268;
+    cursor: pointer;
 }
 a {
-  color: #fa7268;
-  cursor: pointer;
-  text-decoration: none;
+    color: #fa7268;
+    cursor: pointer;
+    text-decoration: none;
 }
 a:hover {
-  color: rgb(233, 233, 194);
+    color: rgb(233, 233, 194);
 }
 .division1 {
-  padding-top: 150px;
-  height: 100vh;
-  background-color: #120e2b;
+    padding-top: 150px;
+    height: 100vh;
+    background-color: #120e2b;
 }
 .container2 {
-  background-color: #c62368;
+    background-color: #c62368;
 }
 
 .gradient-text {
-  text-align: center;
-  font-size: max(3.5vw, 35px);
-  background: linear-gradient(to right, #a200ff, #fa7268);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  width: 100vw;
-  font-weight: 800;
+    text-align: center;
+    font-size: max(3.5vw, 35px);
+    background: linear-gradient(to right, #a200ff, #fa7268);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    width: 100vw;
+    font-weight: 800;
+}
+#section1 {
+    position: relative;
 }
 .pagecontainer {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 #img1 {
-  width: 15%;
-  position: absolute;
-  z-index: 10;
-  left: 80vw;
-  top: 80vh;
-  animation-name: grow;
-  animation-fill-mode: forwards;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+    width: 15%;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    animation-name: grow;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 @keyframes grow {
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 iframe {
-  display: block;
-  margin: 0 auto;
-  border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
 }
 .pagination {
-  display: inline-block;
-  text-align: center;
+    display: inline-block;
+    text-align: center;
 }
 
 .pagination a {
-  color: hsl(0, 0%, 100%);
-  padding: 8px 16px;
-  text-decoration: none;
-  background-color: #120e2b;
-  border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #120e2b;
+    border-radius: 10px;
 }
 
 .pagination a.active {
-  background-color: #a200ff;
-  color: white;
+    background-color: #a200ff;
+    color: white;
 }
 
 .pagination a:hover:not(.active) {
-  animation-name: pagination-hover;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
+    animation-name: pagination-hover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 @keyframes pagination-hover {
-  100% {
-    background-color: #fa7268;
-  }
+    100% {
+        background-color: #fa7268;
+    }
 }
 
 .pagination .disabled {
-  color: #ffffff;
-  pointer-events: none;
+    color: #ffffff;
+    pointer-events: none;
 }
 .pagination-container {
-  display: flex;
-  width: 100vw;
-  height: 100px;
-  background-color: #c62368;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    background-color: #c62368;
+    flex-direction: column;
+    justify-content: center;
 }
