@@ -38,7 +38,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 			</p>
 		</div>
 		<div class="donation">
-			<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" id="donation-form" target="_blank">
+			<form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" id="donation-form">
 				<div class="donation">
 					<h1>Make A Donation</h1>
 					<div class="donation-field">
@@ -70,7 +70,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 				<input type="hidden" name="business" value="sb-qyyoc25365716@business.example.com" />
 				<input type="hidden" name="item_name" value="One-time Donation" />
 				<input type="hidden" name="currency_code" value="USD" />
-				<input type="hidden" name="return" value="https://www.postgresqltutorial.com/donation/thankyou.php" />
+				<input type="hidden" name="return" value="http://localhost:3000/thankyou.php" />
 			</form>
 		</div>
 	</div>
