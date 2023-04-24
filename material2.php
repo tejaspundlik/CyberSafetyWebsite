@@ -20,6 +20,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="icon" type="image/x-icon" href="./Assets/favicon.png" />
 	<link rel="stylesheet" href="./StyleSheet/material2.css" />
+	<link rel="stylesheet" href="./StyleSheet/font.css" />
 	<title>Cyber Security Goals</title>
 </head>
 
