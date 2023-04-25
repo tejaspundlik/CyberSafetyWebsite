@@ -17,7 +17,7 @@
 
 <body>
     <nav class="navbar sticky-top navbar-expand-xxl navbar-light">
-        <a style="margin:0;padding:0;" href="../homepage.php"><img style="margin-left: 5%;max-width:30%;" src="../Assets/homeicon.png" /></a>
+        <a style="margin:0;padding:0;" href="../homepage.php"><img style="margin-left: 5%;max-width:30%;" src="../Assets/icon.png" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
