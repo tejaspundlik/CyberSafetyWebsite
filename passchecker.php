@@ -92,7 +92,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 							Select the length of the password:
 						</h2>
 						<div clas="slider">
-							<input type="range" min="8" max="16" value="16" class="range-slider" id="slider" />
+							<input type="range" min="8" max="16" value="16" class="range-slider" id="slider" style="padding:0" />
 							<label for="minimum">8</label>
 							<label for="maximum" class="label-right" id="slider-label-right"></label>
 						</div>
