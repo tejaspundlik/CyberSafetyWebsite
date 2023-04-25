@@ -77,7 +77,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 					</p>
 				</div>
 
-				<div id="section2">
+				<div id="section2" style="overflow-x:hidden">
 					<img src="./Assets/studyMaterialAsset1.png" alt="virus" id="img1" />
 					<img src="./Assets/studyMaterialAsset2.png" alt="identity-theft" id="img2" />
 					<img src="./Assets/studyMaterialAsset3.png" alt="identity-theft" id="img3" />
