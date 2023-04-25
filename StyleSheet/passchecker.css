@@ -1,209 +1,215 @@
 form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-h1 {
-	color: white;
-	padding: 0 10% 0 10%;
+h1,
+h2,
+h3 {
+    color: white;
+    font-weight: bold;
+    padding: 0 10% 0 10%;
 }
 .page-container {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .division1 {
-	background-image: url(../Assets/feedbackBackground.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 110vh;
+    background-image: url(../Assets/feedbackBackground.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
 }
 .passbox {
-	padding-top: 10rem;
-	margin-top: 8rem;
-	background-color: #f97169;
-	border-radius: 15px;
-	height: 60vh;
-	width: 40vw;
-	flex-direction: column;
-	align-items: center;
-	display: flex;
+    padding-top: 5rem;
+    margin-top: 8rem;
+    background-color: #f97169;
+    border-radius: 15px;
+    height: 60vh;
+    width: 40vw;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
 }
 p {
-	color: rgb(233, 233, 194);
-	font-size: large;
-	padding: 0 10% 0 10%;
-	margin: 2% 0 2% 0;
+    color: rgb(233, 233, 194);
+    font-size: large;
+    padding: 0 10% 0 10%;
+    margin: 2% 0 2% 0;
 }
 .sectiondivider1 {
-	position: absolute;
-	top: 90vh;
-	width: 100%;
-	height: 30vh;
-	z-index: 2;
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+    height: 30vh;
+    z-index: 2;
 }
 .division2 {
-	background-color: #a42668;
-	color: white;
-	font-size: max(3.5vw, 35px);
-	margin-top: -8rem;
+    background-color: #a42668;
+    color: white;
+    font-size: max(3.5vw, 35px);
+    margin-top: -8rem;
 }
 
 label {
-	margin-top: 20px;
-	font-size: 20px;
+    margin-top: 20px;
+    font-size: 20px;
 }
 input {
-	margin-top: 10px;
-	padding: 5px 10px;
-	font-size: 16px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
 }
 .result {
-	margin-top: 20px;
-	font-size: 20px;
+    margin-top: 20px;
+    font-size: 20px;
 }
 .result.strong {
-	color: green;
+    color: green;
 }
 .result.medium {
-	color: orange;
+    color: orange;
 }
 .result.weak {
-	color: aliceblue;
+    color: aliceblue;
 }
 .division3 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #a42668;
-	padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a42668;
+    padding-bottom: 6rem;
+}
+label[for="password"] {
+    color: white;
 }
 .password-generator {
-	background-color: #a42668;
-	display: flex;
-	flex-direction: row;
-	color: white;
-	border-radius: 15px;
-	text-align: center;
-	height: 50vh;
-	width: 60vw;
-	overflow: hidden;
+    background-color: #a42668;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    height: 50vh;
+    width: 60vw;
+    overflow: hidden;
 }
 
 #password2 {
-	width: 60%;
-	height: 40px;
-	margin: 20px 0;
-	padding: 10px;
-	font-size: 1.2em;
-	border-radius: 12px;
-	border: none;
-	background-color: #eee;
+    width: 60%;
+    height: 40px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 12px;
+    border: none;
+    background-color: #eee;
 }
 .button2 {
-	height: 40px;
-	width: 130px;
-	color: white;
-	text-align: center;
-	font-size: 20px;
-	cursor: pointer;
-	background-color: #3e185d;
-	border-radius: 7px;
-	margin: 10px 2px;
-	display: inline-block;
+    height: 40px;
+    width: 130px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3e185d;
+    border-radius: 7px;
+    margin: 10px 2px;
+    display: inline-block;
 }
 .button2:hover {
-	animation-name: button-hover;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
+    animation-name: button-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 @keyframes button-hover {
-	100% {
-		background-color: #a200ff;
-	}
+    100% {
+        background-color: #a200ff;
+    }
 }
 @keyframes lock-key {
-	50% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(1);
-	}
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .lock {
-	animation-name: lock-key;
-	animation-duration: 4s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: infinite;
+    animation-name: lock-key;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 .leftbox {
-	padding-top: 8vh;
-	background-color: #522056;
-	height: 50vh;
-	width: 30vw;
-	flex-direction: column;
-	align-items: center;
-	display: flex;
+    padding-top: 8vh;
+    background-color: #522056;
+    height: 50vh;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
 }
 .rightbox {
-	padding-top: 8vh;
-	background-color: #f97169;
-	height: 50vh;
-	width: 30vw;
-	flex-direction: column;
-	align-items: center;
-	display: flex;
+    padding-top: 8vh;
+    background-color: #f97169;
+    height: 50vh;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
 }
 .diamond {
-	width: 1.5vw;
-	height: 1.5vw;
-	background-color: #f97169;
-	position: relative;
-	transform: rotate(45deg);
-	right: 50%;
-	top: 5%;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #f97169;
+    position: relative;
+    transform: rotate(45deg);
+    right: 50%;
+    top: 5%;
 }
 .slider {
-	position: relative;
+    position: relative;
 }
 .range-slider {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 50%;
-	height: 20px;
-	outline: none;
-	background: linear-gradient(90deg, #522056 50%, #ddd 100%);
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 20px;
+    outline: none;
+    background: linear-gradient(90deg, #522056 50%, #ddd 100%);
 }
 .range-slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: #522056;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #522056;
 }
 label[for="minimum"] {
-	color: #fff;
-	font-size: 18px;
-	position: relative;
-	right: 55%;
-	bottom: 0.6vh;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    right: 55%;
+    bottom: 0.6vh;
 }
 label[for="maximum"] {
-	color: #fff;
-	font-size: 18px;
-	position: relative;
-	right: 3%;
-	bottom: 0.6vh;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    right: 3%;
+    bottom: 0.6vh;
 }
 .range-slider::-webkit-slider-thumb:hover {
-	box-shadow: 0 0 0 5px rgba(82, 32, 86, 0.342);
+    box-shadow: 0 0 0 5px rgba(82, 32, 86, 0.342);
 }
 .range-slider::-webkit-slider-thumb:active {
-	box-shadow: 0 0 0 5px rgba(82, 32, 86, 0.509);
+    box-shadow: 0 0 0 5px rgba(82, 32, 86, 0.509);
 }
