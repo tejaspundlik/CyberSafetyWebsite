@@ -79,7 +79,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 				<img src="./Assets/study.svg" style="margin-bottom:4rem">
 			</div>
 			<div class="cardvideo">
-				<video controls autoplay loop style="border-radius:50px;height:100%">
+				<video controls loop style="border-radius:50px;height:100%">
 					<source src="./Assets/video.mp4" type="video/mp4">
 				</video>
 			</div>
