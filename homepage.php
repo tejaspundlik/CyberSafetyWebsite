@@ -77,9 +77,15 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 		<h1>So, How can I be safe in the digital age ?</h1>
 		<p>Don't worry, we've got you covered.</p>
 		<div class="cardscontainer">
-			<div class="cards"></div>
-			<div class="cards"></div>
-			<div class="cards"></div>
+			<div class="cardstudy">
+				<h1 style="text-align:center;margin-top:6rem">Study Material</h1>
+				<img src="./Assets/study.svg" style="margin-bottom:4rem">
+			</div>
+			<div class="cardvideo">
+				<video controls autoplay muted loop style="border-radius:50px;height:100%">
+					<source src="./Assets/video.mp4" type="video/mp4">
+				</video>
+			</div>
 		</div>
 	</div>
 	<div class="division3">

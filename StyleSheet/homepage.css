@@ -86,10 +86,12 @@ p {
 }
 .cardscontainer {
 	display: flex;
-	max-width: 80rem;
+	max-width: 91rem;
 	margin: 0 auto 0 auto;
 }
-.cards {
+.cardstudy {
+	max-height: 50vh;
+	flex: 0.1;
 	margin: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -100,15 +102,28 @@ p {
 	justify-content: space-between;
 	box-shadow: 2px 2px 20px #020520;
 }
-.cards:hover {
-	animation-name: cards-hover;
+.cardstudy:hover {
+	animation-name: cardstudy-hover;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 }
 
-@keyframes cards-hover {
+@keyframes cardstudy-hover {
 	100% {
 		background-color: #fa7268;
 		transform: scale(1.03);
 	}
+}
+.cardvideo {
+	max-height: 50vh;
+	flex: 0.9;
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #eb5967;
+	min-width: 25rem;
+	min-height: 35rem;
+	border-radius: 50px;
+	justify-content: space-between;
+	box-shadow: 2px 2px 20px #020520;
 }
