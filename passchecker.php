@@ -1,7 +1,8 @@
 <?php
 
 session_start();
-
+echo '<title>Cyber Safety Awareness</title>';
+echo '<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">';
 // Check if the user is logged in
 if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 	// User is logged in, show after-login-navbar.php

@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+echo '<title>Cyber Safety Awareness</title>';
+echo '<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">';
 // Check if the user is logged in
 if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 	// User is logged in, show after-login-navbar.php
@@ -11,20 +12,16 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" type="image/x-icon" href="./Assets/favicon.png" />
+	<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">
 	<link rel="stylesheet" href="./StyleSheet/homepage.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./StyleSheet/font.css" />
-	<title>Are you Cyber Safe?</title>
 </head>
 
 <body>
@@ -82,7 +79,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 				<img src="./Assets/study.svg" style="margin-bottom:4rem">
 			</div>
 			<div class="cardvideo">
-				<video controls autoplay muted loop style="border-radius:50px;height:100%">
+				<video autoplay muted loop style="border-radius:50px;height:100%">
 					<source src="./Assets/video.mp4" type="video/mp4">
 				</video>
 			</div>

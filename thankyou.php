@@ -1,3 +1,8 @@
+<?php
+echo '<title>Cyber Safety Awareness</title>';
+echo '<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">';
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
