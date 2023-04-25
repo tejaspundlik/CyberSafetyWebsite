@@ -82,7 +82,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 						the major concern. In industry, hiding some
 						information from competitors is crucial to the
 						operation of the organization. In banking,
-						customers’ accounts need to be kept secret.
+						customers's accounts need to be kept secret.
 					</p>
 				</div>
 				<div id="section3">

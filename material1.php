@@ -86,7 +86,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 					<img src="./Assets/studyMaterialAsset2.png" alt="identity-theft" id="img2" />
 					<img src="./Assets/studyMaterialAsset3.png" alt="identity-theft" id="img3" />
 					<h2>Types of Cyber Attacks</h2>
-
+					<br>
 					<ul>
 						<li>
 							<h3>Malware</h3>
@@ -100,7 +100,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 							steal, encrypt and delete sensitive data alter
 							or hijack core computing functions and monitor
 							end users' computer activity. Learn more about
-							malware <a href="./material4.html">here</a>.
+							malware <a href="./material4.php">here</a>.
 						</p>
 
 						<li>
@@ -138,7 +138,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 							Types of social engineering attacks include
 							baiting, phishing, vishing, etc. Learn more
 							about social engineering attacks
-							<a href="./material5.html">here</a>
+							<a href="./material5.php">here</a>
 						</p>
 						<li>
 							<h3>SQL Injection Attacks</h3>

@@ -95,7 +95,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                     <br />
                     <h2>Spyware</h2>
                     <p>
-                        Spyware collects information about users’ activities
+                        Spyware collects information about users's activities
                         without their knowledge or consent. This can include
                         passwords, pins, payment information and
                         unstructured messages.
@@ -191,7 +191,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                         vulnerabilities, or through flash drives. Once in
                         place, worms can be used by malicious actors to
                         launch DDoS
-                        <a href="#">( What is a DDoS attack ? )</a> attacks,
+                        <a href="./material5.php">( What is a DDoS attack ? )</a> attacks,
                         steal sensitive data, or conduct ransomware attacks.
                     </p>
                     <div class="example-container">
