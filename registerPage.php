@@ -26,6 +26,8 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
 			</div>';
 	}
+	$stmt->close();
+	$conn->close();
 }
 echo '<title>Cyber Safety Awareness</title>';
 echo '<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">';
@@ -37,8 +39,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 	// User is not logged in, show before-login-navbar.php
 	include './NavBar/navbarBefore.php';
 }
-$stmt->close();
-$conn->close();
 ?>
 
 
