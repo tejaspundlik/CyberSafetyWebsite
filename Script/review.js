@@ -34,6 +34,12 @@ data = [
 		rating: "9",
 		text:"Burp or Burp Suite is a set of tools used for penetration testing of web applications. It is developed by the company named Portswigger, which is also the alias of its founder Dafydd Stuttard. BurpSuite aims to be an all in one set of tools and its capabilities can be enhanced by installing add-ons that are called BApps.",
 	},
+	{   image:"./Assets/reviewCard8.png",
+		name: "Wireshark",
+		rating: "9",
+		text:"Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.",
+		
+	},
 ];
 
 data.forEach((element, i) => {

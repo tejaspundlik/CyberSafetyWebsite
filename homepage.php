@@ -36,7 +36,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 					Are you cyber safe ?
 				</h1>
 				<br />
-				<img src="./Assets/graph.png" height="70%" width="70%" />
+				<img src="./Assets/graph.png" height="60%" width="90%" />
 			</div>
 		</div>
 		<h1>What is cyber safety ?</h1>

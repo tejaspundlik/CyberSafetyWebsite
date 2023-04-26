@@ -1,81 +1,81 @@
 body {
-	background-color: #120e2b;
+    background-color: #120e2b;
 }
 .title {
-	margin: 10rem auto 5rem auto;
-	align-items: center;
+    margin: 10rem auto 5rem auto;
+    align-items: center;
 }
 h1 {
-	text-align: center;
-	color: aliceblue;
+    text-align: center;
+    color: aliceblue;
 }
 p,
 h5 {
-	color: aliceblue;
+    color: aliceblue;
 }
 .content {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 5rem;
-	overflow-y: unset;
-	justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    overflow-y: unset;
+    justify-content: space-between;
 }
 .cards {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	background-color: #cc2c67;
-	border-radius: 50px;
-	width: 270px;
-	margin: 2rem;
-	overflow: hidden;
-	height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #cc2c67;
+    border-radius: 50px;
+    width: 300px;
+    margin: 1rem;
+    overflow: hidden;
+    height: 400px;
 }
 #rating {
-	padding: 1rem;
-	border-radius: 10px;
-	display: inline-block;
-	background-color: #f97169;
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #f97169;
 }
 h5 {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .image-container {
-	height: 40%;
-	width: 100%;
-	overflow: hidden;
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
 }
 #card-img {
-	height: 22vh;
-	width: 100%;
-	object-fit: cover;
+    height: 22vh;
+    width: 100%;
+    object-fit: cover;
 }
 .intro {
-	position: absolute;
-	width: 270px;
-	height: 0px;
-	font-size: medium;
-	box-sizing: border-box;
-	background: rgb(27, 27, 27, 0.9);
-	color: white;
-	border-radius: 50px;
-	transition: 0.5s;
-	backdrop-filter: blur(10px);
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    font-size: medium;
+    box-sizing: border-box;
+    background: rgb(27, 27, 27, 0.9);
+    color: white;
+    border-radius: 50px;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
 }
 .card:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 .intro p {
-	visibility: hidden;
-	opacity: 0;
+    visibility: hidden;
+    opacity: 0;
 }
 .cards:hover .intro {
-	height: 400px;
-	padding: 2rem;
+    height: 400px;
+    padding: 2rem;
 }
 .cards:hover .intro p {
-	opacity: 1;
-	visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
