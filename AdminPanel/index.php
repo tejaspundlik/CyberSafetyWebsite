@@ -1,5 +1,4 @@
 <?php
-session_start();
 echo '<title>Cyber Safety Awareness</title>';
 echo '<link rel="icon" type="image/x-icon" href="../Assets/icon.ico">';
 if (isset($_POST['email']) && $_POST['email'] != '') {
