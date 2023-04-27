@@ -30,7 +30,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./newsletter.php">
+                    <a class="nav-link" href="./removeUser.php">
                         <img class="navImage" src="../Assets/location.gif" />
                         <p class="navText">Edit Newsletter</p>
                     </a>
