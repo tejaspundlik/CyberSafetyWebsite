@@ -40,7 +40,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Review Page</title>
-	<link rel="stylesheet" href="./StyleSheet/forgotPasswordPage.css" />
+	<link rel="stylesheet" href="./StyleSheet/addQuiz.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -50,14 +50,24 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 <body>
 	<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
 		<div class="left">
-			<img src="./Assets/forgotPass.png" />
-			<p>Enter Your Email ID to Recieve Your Password</p>
+			<img src="./Assets/AddQuestion.png" />
+			<p>Before Adding a Question to the Quiz. Some pointers:</p>
+			<ul>
+				<li>Make Sure The Correct Option Is In Upper Case</li>
+				<li>The Question Should Be Relevant To The Study Material</li>
+				<li>Enter The Fields In Camel Case</li>
+			</ul>
 		</div>
 		<div class="right">
-			<h1>Forgot Password ?</h1>
+			<h1>Add Question</h1>
 			<form action="" method="post">
-				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				<input type="submit" value="Continue" />
+				<input type="text" id="question" name="question" required placeholder="Enter Question" autocomplete="off" /><br />
+				<input type="text" id="optionA" name="optionA" required placeholder="Enter Option A" autocomplete="off" /><br />
+				<input type="text" id="optionB" name="optionB" required placeholder="Enter Option B" autocomplete="off" /><br />
+				<input type="text" id="optionC" name="optionC" required placeholder="Enter Option C" autocomplete="off" /><br />
+				<input type="text" id="optionD" name="optionD" required placeholder="Enter Option D" autocomplete="off" /><br />
+				<input type="text" id="correctOption" name="correctOption" required placeholder="Enter Correct Option" autocomplete="off" /><br />
+				<input type="submit" value="Insert Question" />
 			</form>
 		</div>
 	</div>
