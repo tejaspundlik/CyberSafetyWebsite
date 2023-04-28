@@ -57,7 +57,6 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 			<h1>Forgot Password ?</h1>
 			<form action="" method="post">
 				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				
 				<input type="text" id="phonenumber" name="phone" required placeholder="Phone Number" autocomplete="off" /><br />
 				<input type="password" id="newpass" name="newpass"required placeholder="New Password" autocomplete="off" /><br />
 				<input type="submit" value="Continue" />
