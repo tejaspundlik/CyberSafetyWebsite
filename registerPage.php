@@ -5,6 +5,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$formpassword = $_POST['password'];
 	$fname = $_POST['fname'];
 	$lname = $_POST['lname'];
+	$phno = $_POST['phone'];
 	$servername = "sql12.freemysqlhosting.net";
 	$username = "sql12608164";
 	$password = "eDcWvKrJUv";
@@ -15,8 +16,8 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 		$password,
 		$dbname
 	);
-	$stmt = $conn->prepare("INSERT INTO users (email,fname,lname,userpassword) values(?,?,?,?)");
-	$stmt->bind_param("ssss", $mail, $fname, $lname, $formpassword);
+	$stmt = $conn->prepare("INSERT INTO users (email,fname,lname,userpassword,phno) values(?,?,?,?,?)");
+	$stmt->bind_param("sssss", $mail, $fname, $lname, $formpassword, $phno);
 	try {
 		$stmt->execute();
 		header('Location:./homepage.php');
@@ -69,7 +70,8 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 				<input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="off" /><br />
 				<input type="text" id="lname" name="lname" required placeholder="Last Name" autocomplete="off" /><br />
 				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				<input id="password" type="password" name="password" required placeholder="Password" autocomplete="off" /><br />
+				<input type="text" id="phone" name="phone" required placeholder="Phone No." autocomplete="off" /><br />
+				<input type="password" id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
 				<input type="submit" value="Register" />
 			</form>
 		</div>

@@ -47,70 +47,26 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../StyleSheet/font.css" />
+    <link rel="stylesheet" href="../StyleSheet/signRegister.css" />
 </head>
 
 <body>
     <div class="signin" style="margin-bottom:5rem;margin-top:15rem;">
-        <h1>Admin Sign In</h1></br>
-        <form action="" method="post">
-            <input id="email" name="email" required placeholder="ID" autocomplete="off" /><br />
-            <input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
-            <input type="submit" value="Sign In" />
-        </form>
+        <div class="left">
+            <img src="../Assets/signin.jpg" />
+            <p>Contact Your Supervisor For Your Admin-ID And Admin-Password</p>
+        </div>
+        <div class="right">
+            <h1>Admin Sign In</h1>
+            <form action="" method="post">
+                <input id="email" name="email" required placeholder="ID" autocomplete="off" /><br />
+                <input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
+                <input type="submit" value="Sign In" />
+            </form>
+        </div>
+
 
     </div>
 </body>
-<style>
-    body {
-        background-color: #120e2b;
-        background-image: url(../Assets/signregisterpage.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .signin {
-        display: block;
-        width: 40%;
-        background-color: #cc2c67;
-        margin: 9rem auto 0 auto;
-        padding: 3rem;
-        border-radius: 50px;
-    }
-
-    .right a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .right a:hover {
-        color: #120e2b;
-    }
-
-    .signin h1 {
-        color: white;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .signin form {
-        background-color: #cc2c67;
-    }
-
-    ::-webkit-input-placeholder {
-        color: #fff;
-    }
-
-    input {
-        color: white;
-        border-radius: 50px;
-        margin: 1rem 0;
-        background-color: #f97169;
-        outline: none;
-        border: 2px solid #fafafa;
-        padding: 0.6rem 1.2rem;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-    }
-</style>
 
 </html>
