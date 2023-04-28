@@ -5,25 +5,25 @@ echo '<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">';
 include './NavBar/navbarBefore.php';
 if (isset($_POST['email']) && $_POST['email'] != '') {
 	$mail = $_POST['email'];
-	$formpassword = $_POST['password'];
+	$phno = $_POST['phone'];
+	$newpass = $_POST['newpass'];
 	$servername = "sql12.freemysqlhosting.net";
 	$username = "sql12608164";
 	$password = "eDcWvKrJUv";
 	$dbname = "sql12608164";
 	$conn = new mysqli($servername, $username, $password, $dbname);
-	$stmt = $conn->prepare("SELECT * FROM users WHERE email = ? and userpassword = ?");
-	$stmt->bind_param("ss", $mail, $formpassword);
+	$stmt = $conn->prepare("UPDATE users SET userpassword = ? WHERE email = ? AND phno = ?");
+	$stmt->bind_param("sss", $newpass, $mail, $phno);
 	$stmt->execute();
-	$result = $stmt->get_result();
-	$num_rows = mysqli_num_rows($result);
-	if ($result && $num_rows >= 1) {
-		$_SESSION['loggedIn'] = true;
-		$stmt->close();
-		$conn->close();
-		header('Location:./homepage.php');
+	$affected_rows = mysqli_stmt_affected_rows($stmt);
+	if ($affected_rows == 1) {
+		echo '<div class="alert alert-success alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+			<strong>Success!</strong><hr>Your Password Has Been Updated
+			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>';
 	} else {
 		echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
-			<strong>Oops!</strong><hr>Your Email-Id Or Password Is Wrong.
+			<strong>Oops!</strong><hr>Your Email-Id Or Phone Number Is Wrong
 			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
 			</div>';
 	}
@@ -51,16 +51,15 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
 		<div class="left">
 			<img src="./Assets/forgotPass.png" />
-			<p>Enter Your Email ID to Recieve Your Password</p>
+			<p>Enter Your Email ID And Phone Number To Update Your Password</p>
 		</div>
 		<div class="right">
 			<h1>Forgot Password ?</h1>
 			<form action="" method="post">
 				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				
 				<input type="text" id="phonenumber" name="phone" required placeholder="Phone Number" autocomplete="off" /><br />
-				<input type="password" id="newpass" name="newpass"required placeholder="New Password" autocomplete="off" /><br />
-				<input type="submit" value="Continue" />
+				<input type="password" id="newpass" name="newpass" required placeholder="New Password" autocomplete="off" /><br />
+				<input type="submit" value="Change" />
 		</div>
 	</div>
 	<?php include './Footer/footer.php'; ?>
