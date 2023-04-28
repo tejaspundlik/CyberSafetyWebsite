@@ -63,6 +63,9 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 			<a href="./registerPage.php">
 				<p>Register Here</p>
 			</a>
+			<a href="./forgotPasswordPage.php">
+				<p>Forgot Password?</p>
+			</a>
 		</div>
 	</div>
 	<?php include './Footer/footer.php'; ?>
