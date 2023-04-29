@@ -48,7 +48,7 @@ body {
 	color: white;
 	text-align: center;
 }
-.button {
+.donationbutton {
 	display: block;
 	color: white;
 	text-align: center;
@@ -56,15 +56,14 @@ body {
 	cursor: pointer;
 	background-color: #3e185d;
 	border-radius: 20px;
-	padding: 2rem 2rem;
-	margin-top: 1rem;
-	margin-left: 36%;
+	padding: 1rem;
+	margin: 3rem auto 0 auto;
 }
-.button p {
+.donationbutton p {
 	margin: 0 auto;
 	max-width: 5rem;
 }
-.button:hover {
+.donationbutton:hover {
 	animation-name: button-hover;
 	animation-duration: 0.5s;
 	animation-fill-mode: forwards;

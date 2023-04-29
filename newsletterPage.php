@@ -65,7 +65,7 @@ if (isset($_POST['name']) != '' and isset($_POST['email']) != '') {
 				<input type="text" id="name" name="name" required autocomplete="off" />
 				<p>Enter your E-Mail address</p>
 				<input type="email" id="email" name="email" required autocomplete="off" />
-				<button type="submit" class="button">Subscribe</button>
+				<button type="submit" class="donationbutton">Subscribe</button>
 			</form>
 		</div>
 	</div>
