@@ -48,18 +48,20 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 </head>
 
 <body>
-	<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
-		<div class="left">
-			<img src="./Assets/forgotPass.png" />
-			<p>Enter Your Email ID And Phone Number To Update Your Password</p>
-		</div>
-		<div class="right">
-			<h1>Forgot Password ?</h1>
-			<form action="" method="post">
-				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				<input type="text" id="phonenumber" name="phone" required placeholder="Phone Number" autocomplete="off" /><br />
-				<input type="password" id="newpass" name="newpass" required placeholder="New Password" autocomplete="off" /><br />
-				<input type="submit" value="Change" />
+	<div class="center">
+		<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
+			<div class="left">
+				<img src="./Assets/forgotPass.png" />
+				<p>Enter Your Email ID And Phone Number To Update Your Password</p>
+			</div>
+			<div class="right">
+				<h1>Forgot Password ?</h1>
+				<form action="" method="post">
+					<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
+					<input type="text" id="phonenumber" name="phone" required placeholder="Phone Number" autocomplete="off" /><br />
+					<input type="password" id="newpass" name="newpass" required placeholder="New Password" autocomplete="off" /><br />
+					<input type="submit" value="Change" />
+			</div>
 		</div>
 	</div>
 	<?php include './Footer/footer.php'; ?>
