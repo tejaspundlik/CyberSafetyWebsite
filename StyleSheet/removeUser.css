@@ -33,6 +33,7 @@ h1 {
     color: white;
     text-align: center;
     max-width: auto;
+    font-size: 1.2vw;
 }
 .left img {
     display: inline-block;

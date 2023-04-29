@@ -35,6 +35,7 @@ label {
     color: white;
     text-align: center;
     max-width: auto;
+    font-size: 1.2vw;
 }
 .left img {
     display: inline-block;
@@ -74,7 +75,8 @@ input {
 .right input[id="question"] {
     width: 100%;
 }
-ul {
+.left ul {
     color: white;
     font-weight: 400;
+    font-size: 1.2vw;
 }
