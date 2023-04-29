@@ -51,27 +51,29 @@ if (isset($_POST['question']) && $_POST['question'] != '') {
 </head>
 
 <body>
-    <div class="signin">
-        <div class="left">
-            <img src="../Assets/AddQuestion.png" />
-            <p>Before Adding A Question To The Quiz Follow These Rules:</p>
-            <ul>
-                <li>Make Sure The Correct Option Is In Upper Case</li>
-                <li>The Question Should Be Relevant To The Study Material</li>
-                <li>Enter The Fields In Camel Case</li>
-            </ul>
-        </div>
-        <div class="right">
-            <h1>Add Question</h1>
-            <form action="" method="post">
-                <input type="text" id="question" name="question" required placeholder="Enter Question" autocomplete="off" /><br />
-                <input type="text" id="optionA" name="optionA" required placeholder="Enter Option A" autocomplete="off" /><br />
-                <input type="text" id="optionB" name="optionB" required placeholder="Enter Option B" autocomplete="off" /><br />
-                <input type="text" id="optionC" name="optionC" required placeholder="Enter Option C" autocomplete="off" /><br />
-                <input type="text" id="optionD" name="optionD" required placeholder="Enter Option D" autocomplete="off" /><br />
-                <input type="text" id="correctOption" name="correctOption" required placeholder="Enter Correct Option" autocomplete="off" /><br />
-                <input type="submit" value="Insert Question" />
-            </form>
+    <div class="center">
+        <div class="signin">
+            <div class="left">
+                <img src="../Assets/AddQuestion.png" />
+                <p>Before Adding A Question To The Quiz Follow These Rules:</p>
+                <ul>
+                    <li>Make Sure The Correct Option Is In Upper Case</li>
+                    <li>The Question Should Be Relevant To The Study Material</li>
+                    <li>Enter The Fields In Camel Case</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h1>Add Question</h1>
+                <form action="" method="post">
+                    <input type="text" id="question" name="question" required placeholder="Enter Question" autocomplete="off" /><br />
+                    <input type="text" id="optionA" name="optionA" required placeholder="Enter Option A" autocomplete="off" /><br />
+                    <input type="text" id="optionB" name="optionB" required placeholder="Enter Option B" autocomplete="off" /><br />
+                    <input type="text" id="optionC" name="optionC" required placeholder="Enter Option C" autocomplete="off" /><br />
+                    <input type="text" id="optionD" name="optionD" required placeholder="Enter Option D" autocomplete="off" /><br />
+                    <input type="text" id="correctOption" name="correctOption" required placeholder="Enter Correct Option" autocomplete="off" /><br />
+                    <input type="submit" value="Insert Question" />
+                </form>
+            </div>
         </div>
     </div>
 </body>

@@ -45,17 +45,19 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 </head>
 
 <body>
-	<div class="signin" style="margin-bottom:5rem;margin-top:8rem;">
-		<div class="left">
-			<img src="../Assets/removeUser.png" />
-			<p>Enter Email Address Of The User To Remove From The Newsletter</p>
-		</div>
-		<div class="right">
-			<h1>Remove User</h1>
-			<form action="" method="post">
-				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				<input type="submit" value="Remove" />
-			</form>
+	<div class="center">
+		<div class="signin" style="margin-bottom:5rem;margin-top:8rem;">
+			<div class="left">
+				<img src="../Assets/removeUser.png" />
+				<p>Enter Email Address Of The User To Remove From The Newsletter</p>
+			</div>
+			<div class="right">
+				<h1>Remove User</h1>
+				<form action="" method="post">
+					<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
+					<input type="submit" value="Remove" />
+				</form>
+			</div>
 		</div>
 	</div>
 </body>

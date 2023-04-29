@@ -51,21 +51,21 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 </head>
 
 <body>
-    <div class="signin" style="margin-bottom:5rem;margin-top:15rem;">
-        <div class="left">
-            <img src="../Assets/signin.jpg" />
-            <p>Contact Your Supervisor For Your Admin-ID And Admin-Password</p>
+    <div class="center">
+        <div class="signin" style="margin-bottom:5rem;margin-top:15rem;">
+            <div class="left">
+                <img src="../Assets/signin.jpg" />
+                <p>Contact Your Supervisor For Your Admin-ID And Admin-Password</p>
+            </div>
+            <div class="right">
+                <h1>Admin Sign In</h1>
+                <form action="" method="post">
+                    <input id="email" name="email" required placeholder="ID" autocomplete="off" /><br />
+                    <input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
+                    <input type="submit" value="Sign In" />
+                </form>
+            </div>
         </div>
-        <div class="right">
-            <h1>Admin Sign In</h1>
-            <form action="" method="post">
-                <input id="email" name="email" required placeholder="ID" autocomplete="off" /><br />
-                <input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
-                <input type="submit" value="Sign In" />
-            </form>
-        </div>
-
-
     </div>
 </body>
 
