@@ -10,16 +10,14 @@ body {
 .quiz-container {
 	background-color: #cc2c67;
 	border-radius: 50px;
-	margin-top: 5rem;
-	margin-left: 25rem;
-	display: flex;
-	width: 50%;
-	justify-content: center;
-	align-items: center;
+	display: block;
+	margin: 5rem auto 2rem auto;
+	width: 60%;
+	padding: 2rem;
 	overflow: hidden;
 }
 .quiz-header {
-	padding: 4rem 0;
+	padding: 2rem 0;
 }
 h2 {
 	padding: 1rem;
@@ -48,7 +46,8 @@ ul li label {
 	text-align: center;
 	font-size: 20px;
 	cursor: pointer;
-	margin: 2rem 0 2rem 45%;
+	display: block;
+	margin: 1rem auto;
 	padding: 1rem 3rem;
 	background-color: #fa7268;
 	border-radius: 20px;
