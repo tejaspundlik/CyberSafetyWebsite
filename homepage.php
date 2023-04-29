@@ -92,8 +92,8 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 			cards above this will let you know what knowledge you have
 			gained
 		</p>
-		<div style="max-width: 18rem; margin: 0 auto 0 auto">
-			<a href="./quiz.php">
+		<div>
+			<a style="text-decoration:none" href="./quiz.php">
 				<button class="button">
 					<p>Click Here to test your knowledge</p>
 				</button>
