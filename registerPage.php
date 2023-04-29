@@ -59,21 +59,23 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 </head>
 
 <body>
-	<div class="signin" style="margin-bottom:4rem">
-		<div class="left">
-			<img src="./Assets/register.jpg" />
-			<p>When You Register you Get Access To More Features Such As Our Virus Checker Tool Which Helps You To Identify If Any Of Your File Has Virus And Our Curated List Of Products That We Recommend</p>
-		</div>
-		<div class="right">
-			<h1>Register</h1>
-			<form action="" method="post">
-				<input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="off" /><br />
-				<input type="text" id="lname" name="lname" required placeholder="Last Name" autocomplete="off" /><br />
-				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				<input type="text" id="phone" name="phone" required placeholder="Phone No." autocomplete="off" /><br />
-				<input type="password" id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
-				<input type="submit" value="Register" />
-			</form>
+	<div class="center" style="margin-top:5rem">
+		<div class="signin" style="margin-bottom:4rem">
+			<div class="left">
+				<img src="./Assets/register.jpg" />
+				<p>When You Register you Get Access To More Features Such As Our Virus Checker Tool Which Helps You To Identify If Any Of Your File Has Virus And Our Curated List Of Products That We Recommend</p>
+			</div>
+			<div class="right">
+				<h1>Register</h1>
+				<form action="" method="post">
+					<input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="off" /><br />
+					<input type="text" id="lname" name="lname" required placeholder="Last Name" autocomplete="off" /><br />
+					<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
+					<input type="text" id="phone" name="phone" required placeholder="Phone No." autocomplete="off" /><br />
+					<input type="password" id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
+					<input type="submit" value="Register" />
+				</form>
+			</div>
 		</div>
 	</div>
 	<?php include './Footer/footer.php'; ?>
