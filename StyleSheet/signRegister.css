@@ -1,67 +1,70 @@
 body {
-    background-color: #120e2b;
-    background-image: url(../Assets/signregisterpage.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-color: #120e2b;
+	background-image: url(../Assets/signregisterpage.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-
+.center {
+	display: block;
+	max-width: 50%;
+	margin: 0 auto;
+}
 .signin {
-    width: 60%;
-    display: flex;
-    background-color: #cc2c67;
-    margin: 3rem 0 0 20rem;
-    padding: 3rem;
-    border-radius: 50px;
+	width: 100%;
+	display: flex;
+	background-color: #cc2c67;
+	padding: 3rem;
+	border-radius: 50px;
 }
 .left {
-    padding: 2rem;
-    margin-right: 2rem;
-    background-color: #f97169;
-    border-radius: 50px;
-    align-items: center;
-    flex: 1;
+	padding: 2rem;
+	margin-right: 2rem;
+	background-color: #f97169;
+	border-radius: 50px;
+	align-items: center;
+	flex: 1;
 }
 .right {
-    flex: 1;
+	flex: 1;
 }
 .left p {
-    color: white;
-    text-align: center;
-    max-width: auto;
-    font-size: 1.2vw;
+	color: white;
+	text-align: center;
+	max-width: auto;
+	font-size: 1.2vw;
 }
 .left img {
-    display: inline-block;
-    margin: 4rem 6rem;
-    border-radius: 25px;
-    max-width: 50%;
+	display: inline-block;
+	margin: 4rem 6rem;
+	border-radius: 25px;
+	max-width: 50%;
 }
 .right a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 .right a:hover {
-    color: #120e2b;
+	color: #120e2b;
 }
 .signin h1 {
-    color: white;
-    text-align: center;
-    margin-bottom: 2rem;
+	color: white;
+	text-align: center;
+	margin-bottom: 2rem;
 }
 .signin form {
-    background-color: #cc2c67;
+	background-color: #cc2c67;
 }
 ::-webkit-input-placeholder {
-    color: #fff;
+	color: #fff;
 }
 input {
-    color: white;
-    border-radius: 50px;
-    margin: 1rem 0;
-    background-color: #f97169;
-    outline: none;
-    border: 2px solid #fafafa;
-    padding: 0.6rem 1.2rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+	color: white;
+	border-radius: 50px;
+	margin: 1rem 0;
+	background-color: #f97169;
+	outline: none;
+	border: 2px solid #fafafa;
+	padding: 0.6rem 1.2rem;
+	font-weight: 500;
+	letter-spacing: 0.5px;
 }

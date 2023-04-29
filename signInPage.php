@@ -48,24 +48,26 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 </head>
 
 <body>
-	<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
-		<div class="left">
-			<img src="./Assets/signin.jpg" />
-			<p>Sign-In To Access All The Features Available To You Such As The File Scanner And The Curated Product Recomendations</p>
-		</div>
-		<div class="right">
-			<h1>Sign In</h1>
-			<form action="" method="post">
-				<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-				<input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
-				<input type="submit" value="Sign In" />
-			</form>
-			<a href="./registerPage.php">
-				<p>Register Here</p>
-			</a>
-			<a href="./forgotPasswordPage.php">
-				<p>Forgot Password?</p>
-			</a>
+	<div class="center">
+		<div class="signin" style="margin-bottom:5rem;margin-top:5rem;">
+			<div class="left">
+				<img src="./Assets/signin.jpg" />
+				<p>Sign-In To Access All The Features Available To You Such As The File Scanner And The Curated Product Recomendations</p>
+			</div>
+			<div class="right">
+				<h1>Sign In</h1>
+				<form action="" method="post">
+					<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
+					<input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
+					<input type="submit" value="Sign In" />
+				</form>
+				<a href="./registerPage.php">
+					<p>Register Here</p>
+				</a>
+				<a href="./forgotPasswordPage.php">
+					<p>Forgot Password?</p>
+				</a>
+			</div>
 		</div>
 	</div>
 	<?php include './Footer/footer.php'; ?>
