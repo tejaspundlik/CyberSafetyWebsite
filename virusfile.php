@@ -33,7 +33,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
         </form>
 
         <?php
-        if (isset($_FILES['file'])) {
+        if (isset($_FILES['file']) && $_POST['file'] != null) {
             $apikey = "565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6";
             $file = $_FILES['file'];
             $hash = hash_file('sha256', $file['tmp_name']);
@@ -74,6 +74,11 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             }
             $link = "https://www.virustotal.com/gui/file/" . $hash;
             echo "<a class='infourl' href=$link target='_blank'>For more info click here</a><br>";
+        } else {
+            echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+			<strong>Error!</strong><hr>Please Make Sure The Text-Box Isn\'t Empty
+			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>';
         }
         ?>
     </div>

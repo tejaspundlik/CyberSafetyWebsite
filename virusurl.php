@@ -32,7 +32,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             <input class="button" type="submit" value="Scan">
         </form>
         <?php
-        if (isset($_POST['url'])) {
+        if (isset($_POST['url']) && $_POST['url'] != '') {
             $apikey = '565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6';
             $url = $_POST['url'];
             $scan_url = 'https://www.virustotal.com/vtapi/v2/url/scan';
@@ -72,6 +72,11 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             } else {
                 echo "<p class='notsafe'>The API Is Busy Try Again Later</p><br>";
             }
+        } else {
+            echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+			<strong>Error!</strong><hr>Please Make Sure The Text-Box Isn\'t Empty
+			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>';
         }
         ?>
     </div>
