@@ -21,14 +21,25 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 		$stmt->close();
 		$conn->close();
 		header('Location:./homepage.php');
+	}
+	$stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+	$stmt->bind_param("s", $mail);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$num_rows = mysqli_num_rows($result);
+	$stmt->close();
+	$conn->close();
+	if ($num_rows == 1) {
+		echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+			<strong>Oops!</strong><hr>Your Email-Id Is Correct But Password Is Wrong
+			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>';
 	} else {
 		echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
-			<strong>Oops!</strong><hr>Your Email-Id Or Password Is Wrong.
+			<strong>Oops!</strong><hr>You Haven\'t Registered With Us Yet
 			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
 			</div>';
 	}
-	$stmt->close();
-	$conn->close();
 }
 ?>
 
