@@ -1,6 +1,4 @@
 <?php
-echo '<title>Cyber Safety Awareness</title>';
-echo '<link rel="icon" type="image/x-icon" href="../Assets/icon.ico">';
 if (isset($_POST['email']) && $_POST['email'] != '') {
     $mail = $_POST['email'];
     $formpassword = $_POST['password'];
@@ -27,6 +25,8 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
     $stmt->close();
     $conn->close();
 }
+echo '<title>Cyber Safety Awareness</title>';
+echo '<link rel="icon" type="image/x-icon" href="../Assets/icon.ico">';
 ?>
 
 <!DOCTYPE html>
