@@ -28,7 +28,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
     <div class="container">
         <form method="POST" enctype="multipart/form-data">
             <label>Select file to scan</label><br>
-            <input type="file" class="file" name="file"><br>
+            <input required type="file" class="file" name="file"><br>
             <input class="button" type="submit" value="Scan">
         </form>
 
@@ -67,18 +67,17 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 $result = json_decode($response);
                 curl_close($ch);
             }
-            if ($result->data->attributes->last_analysis_stats->malicious > 0) {
-                echo "<p class='notsafe'>The File Is Infected</p><br>";
+            if ($result != null) {
+                if ($result->data->attributes->last_analysis_stats->malicious > 0) {
+                    echo "<p class='notsafe'>The File Is Infected</p><br>";
+                } else {
+                    echo "<p class='safe'>The File Is Safe</p><br>";
+                }
+                $link = "https://www.virustotal.com/gui/file/" . $hash;
+                echo "<a class='infourl' href=$link target='_blank'>For more info click here</a><br>";
             } else {
-                echo "<p class='safe'>The File Is Safe</p><br>";
+                echo "<p class='notsafe'>The API Is Busy Try Again Later</p><br>";
             }
-            $link = "https://www.virustotal.com/gui/file/" . $hash;
-            echo "<a class='infourl' href=$link target='_blank'>For more info click here</a><br>";
-        } else {
-            echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
-			<strong>Error!</strong><hr>Please Make Sure The Text-Box Isn\'t Empty
-			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
-			</div>';
         }
         ?>
     </div>

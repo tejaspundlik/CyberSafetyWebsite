@@ -28,7 +28,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
     <div class="container">
         <form method="post">
             <label>Enter The URL to scan</label><br>
-            <input autocomplete="off" class="url" type="text" name="url"><br>
+            <input required autocomplete="off" class="url" type="text" name="url"><br>
             <input class="button" type="submit" value="Scan">
         </form>
         <?php
@@ -72,11 +72,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             } else {
                 echo "<p class='notsafe'>The API Is Busy Try Again Later</p><br>";
             }
-        } else {
-            echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
-			<strong>Error!</strong><hr>Please Make Sure The Text-Box Isn\'t Empty
-			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
-			</div>';
         }
         ?>
     </div>
