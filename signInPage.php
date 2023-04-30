@@ -1,8 +1,5 @@
 <?php
 session_start();
-echo '<title>Cyber Safety Awareness</title>';
-echo '<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">';
-include './NavBar/navbarBefore.php';
 if (isset($_POST['email']) && $_POST['email'] != '') {
 	$mail = $_POST['email'];
 	$formpassword = $_POST['password'];
@@ -41,6 +38,9 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 			</div>';
 	}
 }
+echo '<title>Cyber Safety Awareness</title>';
+echo '<link rel="icon" type="image/x-icon" href="./Assets/icon.ico">';
+include './NavBar/navbarBefore.php';
 ?>
 
 <!DOCTYPE html>
