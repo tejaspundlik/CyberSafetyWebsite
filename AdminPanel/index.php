@@ -17,7 +17,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
     if ($result && $num_rows >= 1) {
         $stmt->close();
         $conn->close();
-        header('Location:../AdminPanel/addquestions.php');
+        header('Location:../AdminPanel/viewquestions.php');
     } else {
         echo '<div class="alert alert-danger alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
 			<strong>Oops!</strong><hr>Your Admin-Id Or Admin-Password Is Wrong.
