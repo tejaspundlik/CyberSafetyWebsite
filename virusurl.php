@@ -57,7 +57,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $response = curl_exec($ch);
             curl_close($ch);
-
+            sleep(5);
             // Parse the response and display the results
             $result = json_decode($response);
             if ($result->response_code == 1) {
