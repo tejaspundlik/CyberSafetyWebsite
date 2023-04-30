@@ -9,10 +9,10 @@
 	display: flex;
 	justify-content: space-around;
 }
-.left {
+.footerleft {
 	flex: 1;
 }
-.right {
+.footerright {
 	flex: 1;
 }
 .footerh4 {

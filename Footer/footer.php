@@ -14,12 +14,12 @@
 
 <body>
 	<div class="footerouter">
-		<div class="left">
+		<div class="footerleft">
 			<h4 class="footerh4">Donation</h4>
 			<p class="footerp">Help support our cause by making a donation today, every donation no matter how small helps us.</p>
 			<a class="footera" href="../donation.php">Donate</a>
 		</div>
-		<div class="right">
+		<div class="footerright">
 			<h4 class="footerh4">Newsletter</h4>
 			<p class="footerp">
 				Sign up for our newsletter to stay up-to-date on our latest news and
