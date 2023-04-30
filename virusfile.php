@@ -31,9 +31,8 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             <input required type="file" class="file" name="file"><br>
             <input class="button" type="submit" value="Scan">
         </form>
-
         <?php
-        if (isset($_FILES['file']) && $_POST['file'] != null) {
+        if (isset($_FILES['file'])) {
             $apikey = "565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6";
             $file = $_FILES['file'];
             $hash = hash_file('sha256', $file['tmp_name']);
