@@ -66,7 +66,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 				<p>Sign-In To Access All The Features Available To You Such As The File Scanner And The Curated Product Recomendations</p>
 			</div>
 			<div class="right">
-				<h1>Sign In</h1>
+				<h1 style="margin-top:4rem">Sign In</h1>
 				<form action="" method="post">
 					<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
 					<input id="password" name="password" type="password" required placeholder="Password" autocomplete="off" /><br />
