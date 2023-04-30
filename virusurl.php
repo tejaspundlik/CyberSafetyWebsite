@@ -57,7 +57,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $response = curl_exec($ch);
             curl_close($ch);
-            sleep(5);
             // Parse the response and display the results
             $result = json_decode($response);
             if ($result->response_code == 1) {
@@ -71,7 +70,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 //echo "Scan date: " . $result->scan_date . "<br>";
                 echo "<a class='infourl' href=$result->permalink target='_blank'>For more info click here</a> " . "<br>";
             } else {
-                echo "Error: " . $result->verbose_msg . "<br>";
+                echo "<p class='notsafe'>The API Is Busy Try Again Later</p><br>";
             }
         }
         ?>

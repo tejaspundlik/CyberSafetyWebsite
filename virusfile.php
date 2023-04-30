@@ -64,7 +64,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
                 $response = curl_exec($ch);
-                sleep(5);
                 $result = json_decode($response);
                 curl_close($ch);
             }
