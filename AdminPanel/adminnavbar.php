@@ -39,6 +39,12 @@
                         <p class="navText">Add Questions</p>
                     </a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./currentmembers.php">
+                        <img class="navImage" src="../Assets/recommend.gif" />
+                        <p class="navText">Current Newsletter</p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./removeUser.php">
                         <img class="navImage" src="../Assets/location.gif" />
@@ -46,7 +52,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../signOut.php">
+                    <a class="nav-link" href="./signOut.php">
                         <img class="navImage" src="../Assets/signin.gif" />
                         <p class="navText">Sign Out</p>
                     </a>
