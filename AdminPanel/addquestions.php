@@ -60,7 +60,7 @@ if (isset($_POST['question']) && $_POST['question'] != '') {
                     <li>Make Sure The Correct Option Is In Upper Case</li>
                     <li>The Question Should Be Relevant To The Study Material</li>
                     <li>Enter The Fields In Camel Case</li>
-                    <li>The Question Don't Already Exist</li>
+                    <li>The Question Doesn't Already Exist</li>
                 </ul>
             </div>
             <div class="right">
