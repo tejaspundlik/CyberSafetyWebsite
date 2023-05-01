@@ -16,7 +16,7 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$stmt->bind_param("sss", $newpass, $mail, $phno);
 	$stmt->execute();
 	$affected_rows = mysqli_stmt_affected_rows($stmt);
-	if ($affected_rows == 1) {
+	if ($affected_rows >= 1) {
 		echo '<div class="alert alert-success alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
 			<strong>Success!</strong><hr>Your Password Has Been Updated
 			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
