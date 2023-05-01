@@ -22,8 +22,8 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
 			</div>';
 	} else {
-		$stmt = $conn->prepare("SELECT * FROM users WHERE email = ? and phno != ?");
-		$stmt->bind_param("ss", $mail, $phno);
+		$stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+		$stmt->bind_param("s", $mail);
 		$stmt->execute();
 		$result = $stmt->get_result();
 		$num_rows = mysqli_num_rows($result);
