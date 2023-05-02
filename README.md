@@ -7,7 +7,7 @@ As the internet and digital technologies continue to play an increasingly import
 
 # User Visible Features
 
-## Navbar
+## Navbar (navbarbefore.php and navbarafter.php)
 
 The navbar appears on various pages of the website. It includes links to the Passwords page, Contact Us page, and Sign In page. The navbar is styled using Bootstrap, a popular front-end development framework, as well as my own custom CSS.
 
@@ -24,7 +24,7 @@ The styling for the navbar is contained within a separate CSS file, which is lin
 The JavaScript includes several libraries that are used to add interactivity to the navbar. The jQuery library is used to handle various DOM manipulation tasks, while the Popper library is used to position elements such as tooltips and popovers. The Bootstrap JavaScript library includes various plugins that add functionality such as dropdown menus and modals.
 
 
-## Footer
+## Footer (footer.php)
 
 This is the code for the footer that appears on various pages of the website. It includes information about making a donation and signing up for a newsletter. The footer is styled using custom CSS, as well as external CSS files for fonts and layout.
 
@@ -283,4 +283,37 @@ Once the file has been scanned, the code checks if the file is safe or infected 
 The admin page can be access by adding a /AdminPanel to the root path of the website
 
 
-## 
+## View Existing Questions (viewquestions.php)
+
+This is a PHP code that retrieves data from a MySQL database and displays it on a web page.
+
+First, the code starts a session and sets the page title and favicon. It includes a separate PHP file called "adminnavbar.php" that contains navigation links for the admin panel.
+
+Then, it creates a heading and connects to a MySQL database with the given credentials. It retrieves all the rows from the "cyber_security_questions" table using a SQL query, and loops through each row to display the "question" column in a div element with a class of "questions".
+
+Finally, the code closes the database connection
+
+
+## Add New Questions (addquestions.php)
+
+This is a PHP code that adds a new question to a quiz. The code starts by starting a session, setting the title of the page, and including a navigation bar for the admin page. It then checks if the form has been submitted with a question and its options, and if so, retrieves the values and connects to a MySQL database. It then prepares an INSERT statement with placeholders for the question and its options, and binds the values to the placeholders. It then executes the statement and checks if any rows were affected. If no rows were affected, an error message is displayed, and if rows were affected, a success message is displayed.
+
+After this, the code displays an HTML page with a form that allows the user to enter a new question and its options. It also displays some rules to follow when adding a question to the quiz. Once the user enters the information and clicks the "Insert Question" button, the form is submitted to the same page, and the PHP code at the top of the page is executed to add the question to the quiz.
+
+If the insertion is successful, the script will display a success message in a green box at the top of the HTML page. If the insertion fails, the script will display an error message in a red box at the top of the HTML page.
+
+The expected output for a successful insertion would be the success message displayed in the green box. If there is an error with the insertion, the error message would be displayed in the red box. In either case, the user should be able to see whether the question was successfully added to the database or not.
+
+
+## View Existing Newsletter Members (currentusers.php)
+
+The given code is a PHP script that connects to a MySQL database and retrieves data from a table named "newsletter_members". It then displays the email addresses of the members using a while loop and HTML markup.
+
+
+## Remove Existing Newsletter Members (remoceUsers.php)
+
+This PHP code defines a script that removes a user's email address from a newsletter mailing list. It begins by checking if the user has submitted an email address to be removed, and if so, it connects to a MySQL database, prepares a statement to delete the email address from the "newsletter_members" table, binds the email address value to the statement, executes the statement, and then checks if any rows were affected by the deletion.
+
+If no rows were affected, it displays a danger alert indicating that the user does not exist or has already been removed. If at least one row was affected, it displays a success alert indicating that the user has been successfully removed from the newsletter mailing list.
+
+The HTML code at the bottom defines a form that allows an admin user to enter an email address to be removed from the mailing list, along with some styling for the form and page.
