@@ -74,7 +74,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 					<input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="off" /><br />
 					<input type="text" id="lname" name="lname" required placeholder="Last Name" autocomplete="off" /><br />
 					<input type="email" id="email" name="email" required placeholder="Email" autocomplete="off" /><br />
-					<input type="text" id="phone" name="phone" required placeholder="Phone No." autocomplete="off" /><br />
+					<input type="tel" pattern="[0-9]{10}" id="phone" name="phone" required placeholder="Phone No." autocomplete="off" oninvalid="this.setCustomValidity('Must Be 10 Digits!')" onchange="this.setCustomValidity('')" /><br />
 					<input type="password" id="password" name="password" required placeholder="Password" autocomplete="off" /><br />
 					<input type="submit" value="Register" />
 				</form>
