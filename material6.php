@@ -78,16 +78,6 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                             else's secrets, images or information online.
                         </li>
                         <li>
-                            Trickery: When people trick someone into
-                            revealing things and then post them online, it's
-                            called Trickery.
-                        </li>
-                        <li>
-                            Exclusion: Exclusion is when an individual or a
-                            group of people intentionally keeps someone out
-                            of an online group.
-                        </li>
-                        <li>
                             Cyberstalking: Cyberstalking is usually done to
                             create fear in an individual using repeated
                             harassment and denigration.
@@ -105,19 +95,9 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                         submitting someone else's work as one's own, or
                         paraphrasing someone else's work without giving them
                         credit. Plagiarism can harm individuals and
-                        businesses in several ways. For example, it can
-                        damage the reputation of the original author,
-                        decrease the value of their work, and potentially
-                        result in legal action. In academic and professional
-                        settings, plagiarism can result in academic or
-                        professional misconduct charges, which can lead to
-                        disciplinary action or even expulsion. In addition,
-                        plagiarism can also have serious consequences in the
-                        digital world. Search engines like Google use
-                        algorithms to detect duplicate content and penalize
-                        websites that use it. This can result in a decrease
-                        in website traffic and damage to a website's search
-                        engine ranking. Therefore, it is important for
+                        businesses in several ways. 
+                        <br>
+                        <br>Therefore, it is important for
                         individuals and businesses to take measures to
                         prevent plagiarism and ensure that all content is
                         original and properly attributed. This includes
@@ -138,40 +118,25 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                         <li>
                             Whenever there is any Cyber breach, there will
                             be a need to upgrade your Cyber Safety system.
-                            This will incur additional expenses. The expense
-                            is inclusive of new/up-gradation of Cyber
-                            Security Technology, Cyber Safety insurance,
-                            public relations support, and more of similar
-                            nature. Notifying the affected parties of a
-                            particular breach could even result in loss of
-                            customers.
+                           
                         </li>
                         <li>
                             Cyber Safety breach results in the disruption of
-                            operation. When there is any cyber-attack, the
-                            operation of business comes to a halt for
-                            various reasons. If the business operation is
-                            continued, the hacker would continue to get
-                            access to the confidential information.
+                            operation. 
                         </li>
                         <li>
                             On the other hand, when certain types of Cyber
                             Safety breaches render the computer/ network
                             inoperable, it would sometimes take weeks to
                             even months to recover the computer/ network.
-                            Furthermore, sometimes the access to backup data
-                            would also be troublesome.
+                            
                         </li>
                         <li>
                             Along with data breaches, comes the issue of
                             reputational damage. When an organization faces
                             a Cyber Safety breach of data leakage, customers
                             often land up with a dozen questions on privacy
-                            and integrity. Needless to say, if your
-                            organization is known across borders, quite a
-                            few conspiracy theories would arise inevitably.
-                            This will affect the morale of your
-                            organizations workers as well.
+                            and integrity. 
                         </li>
                     </ul>
                     <br />

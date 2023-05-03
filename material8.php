@@ -216,12 +216,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                                 basis of public-key cryptography security.
                                 The time it takes to factor the product of
                                 two sufficiently large primes is beyond the
-                                capabilities of most attackers. RSA keys are
-                                typically 1024 or 2048 bits long, but
-                                experts believe 1024-bit keys will be broken
-                                soon, which is why government and industry
-                                are moving to a minimum key length of
-                                2048-bits.
+                                capabilities of most attackers. 
                             </p>
                         </li>
                         <li>
@@ -234,15 +229,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                                 smaller and more efficient cryptographic
                                 keys through the properties of the elliptic
                                 curve equation.
-                                <br /><br />To break ECC, an attacker must
-                                compute an elliptic curve discrete
-                                logarithm, which is significantly more
-                                difficult problem than factoring. As a
-                                result, ECC key sizes can be significantly
-                                smaller than those required by RSA while
-                                still delivering equivalent security with
-                                lower computing power and battery resource
-                                usage.
+                                
                             </p>
                         </li>
                     </ul>

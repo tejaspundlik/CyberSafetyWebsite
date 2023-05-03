@@ -88,10 +88,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 							individuals or enterprises. They then tailor
 							their messages based on characteristics, job
 							positions, and contacts belonging to their
-							victims to make their attack less conspicuous.
-							Spear phishing requires much more effort on
-							behalf of the perpetrator and may take weeks and
-							months to pull off. They're much harder to
+							victims to make their attack less conspicuous. They're much harder to
 							detect and have better success rates if done
 							skillfully.
 						</p>

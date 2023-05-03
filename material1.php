@@ -123,17 +123,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 							psychological manipulation to trick users into
 							making security mistakes or giving away
 							sensitive information. Social engineering
-							attacks happen in one or more steps.
-							<br /><br />A perpetrator first investigates the
-							intended victim to gather necessary background
-							information, such as potential points of entry
-							and weak security protocols, needed to proceed
-							with the attack. Then, the attacker moves to
-							gain the victim's trust and provide stimuli for
-							subsequent actions that break security
-							practices, such as revealing sensitive
-							information or granting access to critical
-							resources. <br />
+							attacks happen in one or more steps.<br />
 							<br />
 							Types of social engineering attacks include
 							baiting, phishing, vishing, etc. Learn more
@@ -168,9 +158,7 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
 									Create a strong password for all
 									platforms. Try to create unique
 									passwords. Most importantly, the
-									passwords are not related at all. In
-									this way, hackers will not succeed in
-									their password guessing methodology.
+									passwords are not related at all.
 								</p>
 							</li>
 							<li>
