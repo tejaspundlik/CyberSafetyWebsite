@@ -8,8 +8,9 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$password = "eDcWvKrJUv";
 	$dbname = "sql12608164";
 	$conn = new mysqli($servername, $username, $password, $dbname);
+	$hash = md5($formpassword);
 	$stmt = $conn->prepare("SELECT * FROM users WHERE email = ? and userpassword = ?");
-	$stmt->bind_param("ss", $mail, $formpassword);
+	$stmt->bind_param("ss", $mail, $hash);
 	$stmt->execute();
 	$result = $stmt->get_result();
 	$num_rows = mysqli_num_rows($result);

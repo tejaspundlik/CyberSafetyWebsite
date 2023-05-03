@@ -16,8 +16,9 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 		$password,
 		$dbname
 	);
+	$hashpass = md5($formpassword);
 	$stmt = $conn->prepare("INSERT INTO users (email,fname,lname,userpassword,phno) values(?,?,?,?,?)");
-	$stmt->bind_param("sssss", $mail, $fname, $lname, $formpassword, $phno);
+	$stmt->bind_param("sssss", $mail, $fname, $lname, $hashpass, $phno);
 	try {
 		$stmt->execute();
 		echo '<div class="alert alert-success alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
