@@ -12,8 +12,9 @@ if (isset($_POST['email']) && $_POST['email'] != '') {
 	$password = "eDcWvKrJUv";
 	$dbname = "sql12608164";
 	$conn = new mysqli($servername, $username, $password, $dbname);
+	$hash = md5($newpass);
 	$stmt = $conn->prepare("UPDATE users SET userpassword = ? WHERE email = ? AND phno = ?");
-	$stmt->bind_param("sss", $newpass, $mail, $phno);
+	$stmt->bind_param("sss", $hash, $mail, $phno);
 	$stmt->execute();
 	$affected_rows = mysqli_stmt_affected_rows($stmt);
 	if ($affected_rows >= 1) {

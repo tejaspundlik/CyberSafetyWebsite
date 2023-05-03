@@ -32,31 +32,12 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
             <input class="button" type="submit" value="Scan">
         </form>
         <?php
-        if (isset($_FILES['file'])) {
-            $apikey = "565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6";
-            $file = $_FILES['file'];
-            $hash = hash_file('sha256', $file['tmp_name']);
-            // Check if the file has already been scanned
-            $check_url = 'https://www.virustotal.com/api/v3/files/' . $hash;
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_URL, $check_url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
-            $response = curl_exec($ch);
-            $result = json_decode($response);
-            curl_close($ch);
-            if (property_exists($result, 'error') && $result->error) {
-                // If the file has not been scanned yet, send it to VirusTotal for scanning
-                $scan_url = 'https://www.virustotal.com/api/v3/files';
-                $post_fields = array('file' => new CURLFile($file['tmp_name']));
-                $ch = curl_init();
-                curl_setopt($ch, CURLOPT_URL, $scan_url);
-                curl_setopt($ch, CURLOPT_POST, true);
-                curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
-                curl_exec($ch);
+        try {
+            if (isset($_FILES['file'])) {
+                $apikey = "565510b98fd1e99d7015f59371f5f3d80d4044f4d456d226c8fe767809b9fac6";
+                $file = $_FILES['file'];
                 $hash = hash_file('sha256', $file['tmp_name']);
+                // Check if the file has already been scanned
                 $check_url = 'https://www.virustotal.com/api/v3/files/' . $hash;
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL, $check_url);
@@ -65,19 +46,43 @@ if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true) {
                 $response = curl_exec($ch);
                 $result = json_decode($response);
                 curl_close($ch);
-            }
-            if ($result != null) {
-                if ($result->data->attributes->last_analysis_stats->malicious > 0) {
-                    echo "<p class='notsafe'>The File Is Infected</p><br>";
-                } else {
-                    echo "<p class='safe'>The File Is Safe</p><br>";
+                if (property_exists($result, 'error') && $result->error) {
+                    // If the file has not been scanned yet, send it to VirusTotal for scanning
+                    $scan_url = 'https://www.virustotal.com/api/v3/files';
+                    $post_fields = array('file' => new CURLFile($file['tmp_name']));
+                    $ch = curl_init();
+                    curl_setopt($ch, CURLOPT_URL, $scan_url);
+                    curl_setopt($ch, CURLOPT_POST, true);
+                    curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                    curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
+                    curl_exec($ch);
+                    $hash = hash_file('sha256', $file['tmp_name']);
+                    $check_url = 'https://www.virustotal.com/api/v3/files/' . $hash;
+                    $ch = curl_init();
+                    curl_setopt($ch, CURLOPT_URL, $check_url);
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                    curl_setopt($ch, CURLOPT_HTTPHEADER, array('x-apikey: ' . $apikey));
+                    $response = curl_exec($ch);
+                    $result = json_decode($response);
+                    curl_close($ch);
                 }
-                $link = "https://www.virustotal.com/gui/file/" . $hash;
-                echo "<a class='infourl' href=$link target='_blank'>For more info click here</a><br>";
-            } else {
-                echo "<p class='notsafe'>The API Is Busy Try Again Later</p><br>";
+                if ($result != null) {
+                    if ($result->data->attributes->last_analysis_stats->malicious > 0) {
+                        echo "<p class='notsafe'>The File Is Infected</p><br>";
+                    } else {
+                        echo "<p class='safe'>The File Is Safe</p><br>";
+                    }
+                    $link = "https://www.virustotal.com/gui/file/" . $hash;
+                    echo "<a class='infourl' href=$link target='_blank'>For more info click here</a><br>";
+                } else {
+                    echo "<p class='notsafe'>The API Is Busy Try Again Later</p><br>";
+                }
             }
+        } catch (Exception $e) {
+            echo "<p class='notsafe'>The API Is Busy Try Again Later</p><br>";
         }
+
         ?>
     </div>
 </body>
