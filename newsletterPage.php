@@ -28,6 +28,10 @@ if (isset($_POST['name']) != '' and isset($_POST['email']) != '') {
 	$stmt->execute();
 	$stmt->close();
 	$conn->close();
+	echo '<div class="alert alert-success alert-dismissible fade show fixed-top mt-8 py-3 text-center" role="alert" style="font-size: 1.2rem;">
+			<strong>Success!</strong><hr>You Have Succesfully Registered With Us
+			<button type="button" class="btn-close" data-dismiss="alert" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>';
 }
 ?>
 
