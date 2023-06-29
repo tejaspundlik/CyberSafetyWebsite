@@ -310,7 +310,7 @@ The expected output for a successful insertion would be the success message disp
 The given code is a PHP script that connects to a MySQL database and retrieves data from a table named "newsletter_members". It then displays the email addresses of the members using a while loop and HTML markup.
 
 
-## Remove Existing Newsletter Members (remoceUsers.php)
+## Remove Existing Newsletter Members (removeUsers.php)
 
 This PHP code defines a script that removes a user's email address from a newsletter mailing list. It begins by checking if the user has submitted an email address to be removed, and if so, it connects to a MySQL database, prepares a statement to delete the email address from the "newsletter_members" table, binds the email address value to the statement, executes the statement, and then checks if any rows were affected by the deletion.
 
